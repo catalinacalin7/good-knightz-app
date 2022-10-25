@@ -1,6 +1,7 @@
 {
   "name": "good-knightz",
   "version": "0.0.0",
+  "homepage": "https://catalinacalin7.github.io/good-knightz-app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
