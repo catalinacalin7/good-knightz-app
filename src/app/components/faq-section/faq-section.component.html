@@ -1,0 +1,10 @@
+<div class="faq-wrapper">
+  <h1 class="txt-center">FAQ</h1>
+  <img class="bird-img" src="/assets/birdonrock.svg">
+  <div class="questions-wrapper">
+    <div class="question-item flex space-between" *ngFor="let question of questionsArray">
+      <span>{{question}}</span>
+      <img class="expand-btn" src="/assets/plusbtn.svg">
+    </div>
+  </div>
+</div>
