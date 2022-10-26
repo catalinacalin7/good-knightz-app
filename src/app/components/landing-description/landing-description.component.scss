@@ -4,33 +4,33 @@
 }
 
 p {
-  font-size: 12px;
+  font-size: 3.8vw;
   font-family: MontserratMedium;
-  margin: 18px 15px;
+  margin: 5% 4%;
 }
 
 h1 {
   font-family: MontserratBold;
-  font-size: 26px;
+  font-size: 8vw;
 }
 
 .defend-wrap {
-  padding: 64px 21px 52px;
+  padding: 20vw 6vw 17vw;
 }
 
 .defend-title {
   text-align: center;
-  font-size: 25.5px;
-  line-height: 31px;
+  font-size: 8vw;
+  line-height: 10vw;
   font-family: MontserratBold;
 }
 
 .descr-defend {
   text-align: center;
-  font-size: 12px;
-  padding-top: 10px;
-  line-height: 15px;
-  padding-bottom: 29px;
+  font-size: 3.7vw;
+  padding-top: 3%;
+  line-height: 4.4vw;
+  padding-bottom: 10vw;
   margin: 0;
 }
 
@@ -39,10 +39,10 @@ h1 {
 }
 
 .trusted-wrap {
-  margin-top: 29px;
+  margin-top: 9%;
 
   h2 {
-    font-size: 18px;
+    font-size: 5.6vw;
     font-family: MontserratBold;
   }
 
@@ -60,9 +60,9 @@ h1 {
 
 .layer2-sec-wrap {
   background-image: url(/assets/layer2-background.svg);
-  margin-top: 27px;
-  padding-top: 120px;
-  min-height: 510px;
+  margin-top: 9%;
+  padding-top: 36%;
+  min-height: 161vw;
   background-size: cover;
   color: #3a2657;
 
@@ -71,15 +71,15 @@ h1 {
   }
 
   .layer2-ipad-img {
-    width: 324px;
-    margin-top: -11px;
+    width: 100%;
+    margin-top: -2%;
   }
 
   p {
-    margin: 0 15px;
+    margin: 0 5%;
 
     &:first-child {
-      margin-bottom: 14px;
+      margin-bottom: 5%;
     }
 
     span {
@@ -87,34 +87,34 @@ h1 {
     }
   }
 
-  .stone1-img {
-    height: 54px;
-    margin: 55px 0 0 23px;
-  }
+  //   .stone1-img {
+  //     height: 54px;
+  //     margin: 55px 0 0 23px;
+  //   }
 }
 
 .password-prot-wrap {
   background-color: #251b33;
   color: white;
-  padding: 47px 0 0 0;
+  padding: 15% 0 0 0;
 
   img {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 7%;
   }
 }
 
 .panic-mode-wrap {
-  padding-bottom: 52px;
+  padding-bottom: 16%;
 
   img {
     width: 96%;
-    margin-top: 4px;
+    margin-top: 1%;
   }
 
   p {
-    margin-left: 17px;
-    margin-right: 17px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -122,17 +122,17 @@ h1 {
   background-image: url(/assets/powerwizard4.svg);
   background-size: cover;
   color: #3a2657;
-  padding: 67px 0 411px 0;
+  padding: 21vw 0 129vw 0;
 
   p {
-    margin: 18px 18px;
+    margin: 5% 5%;
   }
 
-  img {
-    float: left;
-    width: 100%;
-    margin-top: 15px;
-  }
+  //   img {
+  //     float: left;
+  //     width: 100%;
+  //     margin-top: 15px;
+  //   }
 }
 
 .anti-link-wrap {
@@ -141,17 +141,16 @@ h1 {
   padding-top: 24%;
 
   h1 {
-    padding: 0 64px;
+    padding: 0 20vw;
   }
 
   img {
-    width: 115%;
-    margin-left: -15px;
-    padding-top: 1px;
+    width: 117%;
+    margin-left: -5%;
   }
 
   p {
-    margin: -4px 26px 47px 26px;
+    margin: -2% 8% 14% 9%;
   }
 }
 
@@ -160,8 +159,9 @@ h1 {
   color: #251b33;
 
   h1 {
-    padding: 33px 10px;
-    font-size: 18px;
+    padding: 10% 5%;
+    font-size: 5.8vw;
+
   }
 
   span {
