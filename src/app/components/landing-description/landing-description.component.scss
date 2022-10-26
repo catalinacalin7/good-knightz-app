@@ -71,8 +71,9 @@ h1 {
   }
 
   .layer2-ipad-img {
-    width: 100%;
+    width: 111%;
     margin-top: -2%;
+    margin-left: -3%;
   }
 
   p {
@@ -99,8 +100,9 @@ h1 {
   padding: 15% 0 0 0;
 
   img {
-    width: 100%;
+    width: 109%;
     margin-top: 7%;
+    margin-left: -5%;
   }
 }
 
@@ -119,7 +121,8 @@ h1 {
 }
 
 .power-wizard-wrap {
-  background-image: url(/assets/powerwizard4.svg);
+  background-image: url(/assets/wizard.png);
+  background-color: white;
   background-size: cover;
   color: #3a2657;
   padding: 21vw 0 129vw 0;
