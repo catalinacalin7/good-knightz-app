@@ -18,17 +18,16 @@ h1 {
   }
 
   .questions-wrapper {
-    padding: 0 21px;
+    padding: 0 6%;
   }
 
   .question-item {
     background-color: #3A2657;
     color: #F5ADFF;
     font-family: MontserratSemiBold;
-    margin: 0 0 18px 0;
-    font-size: 12px;
-    padding: 15px 16px;
-
+    margin: 0 0 6% 0;
+    font-size: 3.8vw;
+    padding: 5.4% 6%;
     border-radius: 9px;
 
     &:nth-of-type(1) {
@@ -63,7 +62,7 @@ h1 {
     }
 
     &:first-of-type {
-      margin-top: -27px;
+      margin-top: -10%;
       position: relative;
     }
 
