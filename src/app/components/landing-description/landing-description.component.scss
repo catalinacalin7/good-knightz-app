@@ -3,6 +3,11 @@
   font-family: MontserratRegular;
 }
 
+
+.white-hat-desktop {
+  display: none;
+}
+
 .stars1-background {
   background-image: url(/assets/stars1.svg);
   background-size: contain;
@@ -31,6 +36,10 @@ h1 {
   font-family: MontserratBold;
 }
 
+.rounded-button-div {
+  text-align: center;
+}
+
 .descr-defend {
   text-align: center;
   font-size: 3.7vw;
@@ -39,7 +48,8 @@ h1 {
   margin: 0;
 }
 
-.white-hat {
+.white-hat-mobile {
+  display: block;
   width: 100%;
 }
 
@@ -179,5 +189,63 @@ h1 {
   span {
     color: #f7a302;
     font-family: MontserratBold;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  .stars1-background {
+    background-image: url(/assets/stars1desktop.svg);
+    background-size: contain;
+    background-position-y: 0%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 90vw;
+  }
+
+  .defend-wrap {
+    padding: 3% 0 3% 9%;
+    display: flex;
+  }
+
+  .defend-title {
+    font-size: 5.8vw;
+    line-height: 6.6vw;
+    font-family: MontserratBold;
+    text-align: left;
+  }
+
+  .rounded-button-div {
+    text-align: left;
+  }
+
+  .white-hat-mobile {
+    display: none;
+  }
+
+  .white-hat-desktop {
+    display: inline-block;
+    width: 140vw;
+    margin-top: 1%;
+    margin-right: -1%;
+  }
+
+  .defend-flex {
+    display: flex;
+  }
+
+  .descr-defend {
+    text-align: left;
+    width: 35vw;
+    font-size: 1.4vw;
+    font-family: MontserratRegular;
+    padding: 0;
+    padding-top: 25px;
+    line-height: 1.6vw;
+    margin-bottom: 7%;
+  }
+
+  .rounded-button-div {
+    display: flex;
   }
 }

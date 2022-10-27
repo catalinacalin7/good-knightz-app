@@ -20,3 +20,28 @@ span {
 .icon1 {
   width: 12%;
 }
+
+@media only screen and (min-width: 750px) {
+  button {
+    font-size: 1.3vw;
+    margin: unset;
+    width: 89%;
+    padding: 3.4%;
+    font-family: MontserratRegular;
+  }
+
+  .transparent {
+    color: white;
+    background-color: #3A2657;
+    width: 80%;
+    padding: 4.4%;
+  }
+
+  span {
+    padding-left: 4%;
+  }
+
+  .icon1 {
+    width: 11%;
+  }
+}
