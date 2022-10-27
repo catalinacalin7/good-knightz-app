@@ -192,6 +192,10 @@ h1 {
   }
 }
 
+.documentation-btn {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
 
   .stars1-background {
@@ -247,5 +251,9 @@ h1 {
 
   .rounded-button-div {
     display: flex;
+  }
+
+  .documentation-btn {
+    display: inline-block;
   }
 }
