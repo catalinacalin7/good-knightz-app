@@ -9,14 +9,15 @@ h1 {
 
 .faq-wrapper {
   padding: 13% 0;
-
-  .bird-img {
-    width: 19vw;
-    margin-left: 6%;
-    margin-top: -9%;
-  }
+  background-image: url(/assets/stars5.png);
+  background-size: 92vw;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20vw;
 
   .questions-wrapper {
+    margin-top: 20%;
+    position: relative;
     padding: 0 6%;
   }
 
@@ -61,7 +62,7 @@ h1 {
     }
 
     &:first-of-type {
-      margin-top: -10%;
+      margin-top: -3px;
       position: relative;
     }
 

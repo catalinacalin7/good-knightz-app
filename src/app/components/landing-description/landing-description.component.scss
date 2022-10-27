@@ -9,6 +9,10 @@
   background-position-y: 2%;
 }
 
+// .stars2-background {
+//   background-image: url(/assets/stars2.svg);
+// }
+
 p {
   font-size: 3.8vw;
   font-family: MontserratMedium;
@@ -101,8 +105,13 @@ h1 {
 
 .password-prot-wrap {
   background-color: #251b33;
+  background-image: url(/assets/stars2.svg);
   color: white;
   padding: 15% 0 0 0;
+  background-size: 64vw;
+  background-position-y: 0%;
+  background-position-x: 70%;
+  background-repeat: no-repeat;
 
   img {
     width: 109%;
@@ -113,6 +122,11 @@ h1 {
 
 .panic-mode-wrap {
   padding-bottom: 16%;
+  background-image: url(/assets/stars3.svg);
+  background-size: 71vw;
+  background-position-x: 22vw;
+  background-repeat: no-repeat;
+  background-position-y: 31vw;
 
   img {
     width: 96%;
@@ -147,6 +161,11 @@ h1 {
   color: white;
   padding-bottom: 10%;
   padding-top: 24%;
+  background-image: url(/assets/stars4.svg);
+  background-size: 90vw;
+  background-position-x: 6vw;
+  background-repeat: no-repeat;
+  background-position-y: 20vw;
 
   h1 {
     padding: 0 20vw;
