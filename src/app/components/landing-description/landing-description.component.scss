@@ -196,6 +196,14 @@ h1 {
   display: none;
 }
 
+.layer-2-desktop-title {
+  display: none;
+}
+
+.lockicon {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
 
   .stars1-background {
@@ -266,6 +274,54 @@ h1 {
 
     h2 {
       font-size: 2.9vw;
+    }
+  }
+
+  .layer2-sec-wrap {
+    background-image: url(/assets/layer2desktop.svg);
+    background-size: cover;
+    min-height: 56vw;
+    padding-top: 19vw;
+  }
+
+  .layer-2-mobile-title {
+    display: none;
+  }
+
+  .flex-desktop {
+    display: flex;
+  }
+
+  .layer-2-desktop-title {
+    display: block;
+    font-size: 3.3vw;
+    margin-top: 7%;
+  }
+
+  .layer2-sec-wrap {
+    p {
+      font-size: 1.4vw;
+      margin-top: 3% !important;
+      margin: 0;
+      padding-right: 3%;
+    }
+
+    .text-wrap {
+      margin: 0px 7% 0 -7%;
+      padding-left: 2%;
+      text-align: left;
+
+      .lockicon {
+        width: 17%;
+        margin-top: 24%;
+        display: block;
+      }
+    }
+
+    .layer2-ipad-img {
+      width: 221%;
+      margin-top: -2%;
+      margin-left: 0;
     }
   }
 }
