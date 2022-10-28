@@ -208,7 +208,27 @@ h1 {
   display: none;
 }
 
+.panic-icon {
+  display: none;
+}
+
+.iphones-mobile {
+  display: block;
+}
+
+.iphones-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
+
+  .iphones-mobile {
+    display: none;
+  }
+
+  .iphones-desktop {
+    display: block;
+  }
 
   .stars1-background {
     background-image: url(/assets/stars1desktop.svg);
@@ -331,7 +351,7 @@ h1 {
 
   .stars2-background {
     background-image: url(/assets/stars6.svg);
-    background-size: 86vw;
+    background-size: 87vw 99vw;
     background-position-x: center;
     background-repeat: no-repeat;
     background-position-y: 6%;
@@ -363,8 +383,8 @@ h1 {
     }
 
     img {
-      width: 65vw;
-      margin-top: 1%;
+      width: 68vw;
+      margin-top: 2%;
       margin-left: -51vw;
       margin-right: 7%;
     }
@@ -376,5 +396,46 @@ h1 {
     }
   }
 
+  .panic-mode-wrap {
+    display: flex;
+    text-align: left;
+    flex-direction: row-reverse;
+    background-image: unset;
+    padding-bottom: 6%;
+
+    h1 {
+      font-size: 3.3vw;
+      padding-top: 3vw;
+      padding-left: 10%;
+    }
+
+    p {
+      font-size: 1.4vw;
+      margin: 0 !important;
+      padding-top: 2%;
+      padding-left: 10%;
+      width: 81%;
+    }
+
+    img {
+      width: 107%;
+      margin-top: -2%;
+      margin-left: 3%;
+    }
+  }
+
+  .panic-icon {
+    display: inline-block;
+    width: 17% !important;
+    margin: 0 !important;
+    padding-left: 10%;
+  }
+
+  .panic-txt-wrap {
+    padding-top: 6%;
+    width: 65vw;
+    padding-left: 0vw;
+    margin-right: 6vw;
+  }
 
 }
