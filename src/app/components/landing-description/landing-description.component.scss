@@ -148,7 +148,7 @@ h1 {
   padding: 21vw 0 129vw 0;
 
   p {
-    margin: 5% 5%;
+    margin: 5% 6%;
   }
 }
 
@@ -217,6 +217,14 @@ h1 {
 }
 
 .iphones-desktop {
+  display: none;
+}
+
+.wizard-title-mobile {
+  display: block;
+}
+
+.wizard-title-desktop {
   display: none;
 }
 
@@ -437,5 +445,36 @@ h1 {
     padding-left: 0vw;
     margin-right: 6vw;
   }
+
+  /// power wizard
+
+  .wizard-title-mobile {
+    display: none;
+  }
+
+  .wizard-title-desktop {
+    display: block;
+    font-size: 3.3vw;
+  }
+
+  .power-wizard-wrap {
+    background-image: url(/assets/wizarddesktop.svg);
+    background-color: #99E4FF;
+    background-size: cover;
+    color: #3a2657;
+    padding: 8vw 0 45vw 0;
+    background-position-y: 2vw;
+    background-repeat: no-repeat;
+
+    p {
+      font-size: 1.2vw;
+      margin-top: 1%;
+
+      .bold-span {
+        font-family: MontserratBold;
+      }
+    }
+  }
+
 
 }
