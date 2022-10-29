@@ -474,7 +474,41 @@ h1 {
         font-family: MontserratBold;
       }
     }
+
+
   }
 
+  /// anti link
+  .anti-link-wrap {
+    padding: 12% 12% 0 12%;
 
+    h1 {
+      font-size: 3.3vw;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2vw;
+      margin: 0;
+      font-size: 1.4vw;
+      margin-top: 1.5%;
+    }
+
+    .flex-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .learn-more-wrap {
+    background-color: unset;
+    margin-top: -3%;
+    color: white;
+    padding: 0;
+
+    h1 {
+      padding: 0;
+      font-size: 2.85vw;
+    }
+  }
 }
