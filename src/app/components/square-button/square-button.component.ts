@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'square-button',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./square-button.component.scss']
 })
 export class SquareButtonComponent implements OnInit {
+  @Input() color = '';
+  @Input() text = '';
   constructor() {}
 
   ngOnInit(): void {}

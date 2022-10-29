@@ -71,3 +71,40 @@ h1 {
     }
   }
 }
+
+@media only screen and (min-width: 750px) {
+  .faq-wrapper {
+    padding: 10% 0 6% 0;
+    background-image: unset;
+
+
+    h1 {
+      font-size: 3.1vw;
+    }
+
+    .questions-wrapper {
+      margin-top: 0;
+      padding: 4% 19%;
+    }
+
+    .question-item {
+      padding: 1.9% 2.2% 1.9% 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.9%;
+
+      &:first-of-type {
+        margin-top: 0px;
+      }
+
+      span {
+        font-size: 1.35vw;
+      }
+
+      .expand-btn {
+        width: 4.5%;
+      }
+    }
+  }
+}

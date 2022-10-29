@@ -22,3 +22,49 @@
   float: right;
   margin-right: 11%;
 }
+
+.free-features {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .free-features {
+    display: inline-block;
+  }
+
+  .white-wrapper {
+    background-color: unset;
+    background-image: url(/assets/owldesktop.svg);
+    background-repeat: no-repeat;
+    background-size: 69vw;
+    background-position-x: 6vw;
+    margin-top: -1%;
+
+    h1 {
+      font-size: 3.3vw;
+      margin-top: 8%;
+      margin-bottom: 3%;
+    }
+
+    square-button {
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .unicorn-knight {
+    content: url(/assets/unicorndesktop.svg);
+    width: 29%;
+    margin-top: -19%;
+    float: right;
+    margin-right: 7%;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

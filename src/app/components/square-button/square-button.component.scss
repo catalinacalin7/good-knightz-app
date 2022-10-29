@@ -1,21 +1,38 @@
 button {
-  color: #321A70;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  border: 3px solid #321A70;
   width: 100%;
-  background-color: transparent;
   font-family: MontserratBold;
+  color: white;
+  border: 3px solid #3A2657;
+  background-color: #3A2657;
 
   img {
     width: 4%;
+    padding-left: 5%;
   }
 
   span {
     font-size: 4.7vw;
-    padding-right: 5%;
+  }
+}
+
+.transparent {
+  border: 3px solid #321A70;
+  color: #321A70;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 750px) {
+  button {
+    width: 20vw;
+    border-radius: 10px;
+
+    span {
+      font-size: 1.6vw;
+    }
   }
 }

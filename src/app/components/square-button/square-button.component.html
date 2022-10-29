@@ -1,1 +1,4 @@
-<button><span>Get Started</span><img src="assets/arrow-icon.svg" class="icon1"></button>
+<button [ngClass]="{'transparent' : this.color === 'transparent'}">
+  <span>{{this.text}}</span>
+  <img src="assets/arrow-icon.svg" *ngIf="this.text === 'Get Started'" class="icon1">
+</button>

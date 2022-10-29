@@ -500,6 +500,10 @@ h1 {
     }
   }
 
+  .anti-link-wrap {
+    background-image: unset;
+  }
+
   .learn-more-wrap {
     background-color: unset;
     margin-top: -3%;
@@ -510,5 +514,13 @@ h1 {
       padding: 0;
       font-size: 2.85vw;
     }
+  }
+
+  .stars3-background {
+    background-image: url(/assets/faqstarsdesktop.png);
+    background-size: 94vw;
+    background-repeat: no-repeat;
+    background-position-y: 22%;
+    background-position-x: 5vw;
   }
 }
