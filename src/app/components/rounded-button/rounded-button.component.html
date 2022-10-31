@@ -1,4 +1,6 @@
-<button [ngClass]="{'transparent' : this.color === 'transparent'}">
+<button [ngClass]="this.color">
   <img src="assets/icon1.png" class="icon1">
+  <img src="assets/support.svg" class="support" *ngIf="this.text === 'Support'">
+  <img src="assets/twitericon.svg" class="twitter" *ngIf="this.text === 'Twitter'">
   <span>{{this.text}}</span>
 </button>

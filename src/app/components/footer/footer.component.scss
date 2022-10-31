@@ -33,8 +33,12 @@
   }
 }
 
+.footer-content-desktop {
+  display: none;
+}
+
 .solid {
-  border: 1px solid #404040;
+  border: 0.5px solid #404040;
   margin-top: 7%;
   width: 93%;
 }
@@ -43,4 +47,58 @@
   font-size: 3.6vw;
   text-transform: uppercase;
   margin: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  .footer-wrapper {
+    background-size: cover;
+    padding: 8% 4% 0;
+
+    .footer-content-mobile {
+      display: none;
+    }
+
+    .footer-content-desktop {
+      display: block;
+
+      .btns-wrap {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 72%;
+      }
+
+      .solid {
+        border: 0.5px solid #404040;
+        margin-top: 5%;
+        width: 66%;
+      }
+
+      .rarefied {
+        font-size: 0.9vw;
+        margin: 0;
+      }
+
+      .footer-bottom-desktop {
+        display: flex;
+        margin: 4% 16% 1% 16%;
+        border-top: 1px solid #404040;
+        padding-top: 1%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .desktop-btn {
+        font-family: MontserratRegular;
+        font-size: 0.9vw;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0;
+        padding-left: 37px;
+        text-align: right;
+      }
+    }
+  }
 }
