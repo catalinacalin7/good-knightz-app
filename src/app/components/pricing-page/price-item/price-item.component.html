@@ -1,0 +1,24 @@
+<div class="card">
+  <h1>{{this.title}}</h1>
+  <div *ngIf="this.title === 'Knight Tier'" class="knight-tier-wrap">
+    <div class="knight-tier-price price">
+      <span class="first-part-price">20</span>
+      <span class="second-part-price ">votes<br> per server</span>
+    </div>
+    <p class="access-period">Monthly Access</p>
+    <div class="advantages-wrap">
+      <div class="flex advantages-item">
+        <img class="ok-icon" src="assets/okicon.svg" />
+        <p>Channel-specific list whitelists</p>
+      </div>
+      <div class="flex advantages-item">
+        <img class="ok-icon" src="assets/okicon.svg" />
+        <p>Channel lockdown</p>
+      </div>
+      <div class="flex advantages-item">
+        <img class="ok-icon" src="assets/okicon.svg" />
+        <p>Embed creator and more...</p>
+      </div>
+    </div>
+  </div>
+</div>

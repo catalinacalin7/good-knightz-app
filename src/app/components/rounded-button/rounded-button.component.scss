@@ -24,7 +24,6 @@ span {
 @media only screen and (min-width: 750px) {
   button {
     font-size: 1.3vw;
-    margin: unset;
     width: 89%;
     padding: 3.4%;
     font-family: MontserratRegular;
@@ -33,15 +32,26 @@ span {
   .transparent {
     color: white;
     background-color: #3A2657;
-    width: 80%;
     padding: 4.4%;
+  }
+
+  .white {
+    background-color: white;
+    color: #3A2657;
+  }
+
+  .blue {
+    background-color: #00B9F6;
+    color: white;
   }
 
   span {
     padding-left: 4%;
   }
 
-  .icon1 {
+  .icon1,
+  .twitter,
+  .support {
     width: 11%;
   }
 }

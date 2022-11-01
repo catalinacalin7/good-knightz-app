@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  font-family: MontserratRegular;
+}
+
+p {
+  font-size: 3.8vw;
+  font-family: MontserratMedium;
+  margin: 5% 5%;
+}
+
+h1 {
+  font-family: MontserratBold;
+  font-size: 7.8vw;
+}
+
+.site-body {
+  background-color: #251B33;
+}
+
+.join-title {
+  padding: 17vw 6vw 0 6vw;
+}
+
+.join-description {
+  text-align: center;
+  font-size: 3.7vw;
+  padding: 3% 7% 13vw;
+  line-height: 4.4vw;
+  margin: 0;
+}
+
+.join-wrap {
+  text-align: center;
+}
+
+.prices-items-wrap {
+  width: 100%;
+  padding: 0 6%;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 750px) {
+  .join-title {
+    padding: 3% 0 3% 9%;
+    display: flex;
+  }
+
+  .join-description {
+    text-align: left;
+    width: 35vw;
+    font-size: 1.4vw;
+    overflow: hidden;
+    font-family: MontserratRegular;
+    padding: 0;
+    padding-top: 25px;
+    line-height: 1.6vw;
+    margin-bottom: 7%;
+  }
+}

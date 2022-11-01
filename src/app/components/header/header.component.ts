@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  constructor() {
-    console.log('window.location.href ', window.location.href);
-  }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  getActiveLink() {
+    var n = window.location.href.lastIndexOf('/');
+    var result = window.location.href.substring(n + 1);
+    if (result === '') {
+      return 'features';
+    }
+    return result;
+  }
+
+  changeRoute(route: string) {
+    this.router.navigateByUrl('/' + route);
+  }
 }

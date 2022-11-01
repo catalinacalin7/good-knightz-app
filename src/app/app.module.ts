@@ -11,6 +11,10 @@ import { FaqSectionComponent } from './components/faq-section/faq-section.compon
 import { SecureForFreeComponent } from './components/secure-for-free/secure-for-free.component';
 import { SquareButtonComponent } from './components/square-button/square-button.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PricingPageComponent } from './components/pricing-page/pricing-page.component';
+import { PricingPagePricesComponent } from './components/pricing-page/pricing-page-prices/pricing-page-prices.component';
+import { PriceItemComponent } from './components/pricing-page/price-item/price-item.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +27,14 @@ import { FooterComponent } from './components/footer/footer.component';
     FaqSectionComponent,
     SecureForFreeComponent,
     SquareButtonComponent,
-    FooterComponent
+    FooterComponent,
+    PricingPageComponent,
+    PricingPagePricesComponent,
+    PriceItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
