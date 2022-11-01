@@ -29,6 +29,26 @@ h1 {
     font-size: 3.8vw;
     padding: 5.4% 6%;
     border-radius: 9px;
+    flex-wrap: wrap;
+
+    &.question-item--visible-answer {
+      color: white;
+
+      p {
+        height: auto;
+        display: block;
+        transition: height 3s;
+      }
+    }
+
+  p {
+      font-family: MontserratLight;
+      display: none;
+      height: 0;
+      width: 100%;
+      font-size: 1.19vw;
+      margin-top: 2.5vw;
+    }
 
     &:nth-of-type(1) {
       span {
@@ -58,6 +78,7 @@ h1 {
     &:nth-of-type(7) {
       span {
         margin-right: 5%;
+        max-width: 80%;
       }
     }
 
@@ -68,6 +89,10 @@ h1 {
 
     .expand-btn {
       width: 11%;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
