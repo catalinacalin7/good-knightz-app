@@ -1,9 +1,16 @@
-<app-header></app-header>
-<div class="join-wrap">
-  <h1 class="join-title">Join fellow Knightz at the Round Table!</h1>
-  <p class="join-description">Enhance your server security with most advanced security and moderation features.</p>
-</div>
-<app-secure-for-free></app-secure-for-free>
-<div class="prices-items-wrap">
-  <price-item *ngFor="let item of pricesItems" title="{{item.title}}"></price-item>
+<div class="pricing-stars-mobile">
+  <app-header></app-header>
+  <div class="join-wrap">
+    <h1 class="join-title">Join fellow Knightz at the Round Table!</h1>
+    <p class="join-description">Enhance your server security with most advanced security and moderation features.</p>
+  </div>
+  <app-secure-for-free></app-secure-for-free>
+  <div class="prices-items-wrap">
+    <price-item *ngFor="let item of pricesItems" title="{{item.title}}"></price-item>
+  </div>
+  <div class="contact-detail-wrap">
+    <p>Professional server security audits and custom setup
+      by Discord security experts<br>
+      <span>Contact for Details</span></p>
+  </div>
 </div>

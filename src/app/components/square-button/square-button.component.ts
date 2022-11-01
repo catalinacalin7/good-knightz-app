@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SquareButtonComponent implements OnInit {
   @Input() color = '';
   @Input() text = '';
+  @Input() bordercolor = '';
+
   constructor() {}
 
   ngOnInit(): void {}

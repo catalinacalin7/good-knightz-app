@@ -9,6 +9,13 @@ p {
   margin: 5% 5%;
 }
 
+.pricing-stars-mobile {
+  background-image: url(/assets/pricing-stars-mobile.svg);
+  background-size: contain;
+  background-position-y: 2vw;
+  background-repeat: no-repeat;
+}
+
 h1 {
   font-family: MontserratBold;
   font-size: 7.8vw;
@@ -38,6 +45,22 @@ h1 {
   width: 100%;
   padding: 0 6%;
   box-sizing: border-box;
+}
+
+.contact-detail-wrap {
+  text-align: center;
+  margin: 8% 8% 18%;
+
+  p {
+    font-size: 5vw;
+    font-family: MontserratBold;
+
+    span {
+      font-family: 'MontserratBold';
+      text-decoration: underline;
+      color: #F7A302;
+    }
+  }
 }
 
 @media only screen and (min-width: 750px) {

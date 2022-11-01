@@ -1,23 +1,40 @@
-<div class="card">
-  <h1>{{this.title}}</h1>
-  <div *ngIf="this.title === 'Knight Tier'" class="knight-tier-wrap">
-    <div class="knight-tier-price price">
-      <span class="first-part-price">20</span>
-      <span class="second-part-price ">votes<br> per server</span>
-    </div>
-    <p class="access-period">Monthly Access</p>
-    <div class="advantages-wrap">
-      <div class="flex advantages-item">
-        <img class="ok-icon" src="assets/okicon.svg" />
-        <p>Channel-specific list whitelists</p>
+<div class="card" [ngClass]="{'round-table-card' : this.title === 'Round Table Tier'}">
+  <h1 class="card-title">{{this.title}}</h1>
+  <div class="content-wrap">
+    <div>
+      <div class="knight-tier-price price" *ngIf="this.title === 'Knight Tier'">
+        <span class="first-part-price">20</span>
+        <span class="second-part-price ">votes<br> per server</span>
       </div>
-      <div class="flex advantages-item">
-        <img class="ok-icon" src="assets/okicon.svg" />
-        <p>Channel lockdown</p>
+
+      <div class="knight-tier-price price" *ngIf="this.title === 'Round Table Tier'">
+        <span class="first-part-price">US</span>
+        <span class="second-part-price ">$9.99</span>
       </div>
-      <div class="flex advantages-item">
-        <img class="ok-icon" src="assets/okicon.svg" />
-        <p>Embed creator and more...</p>
+
+      <div class="knight-tier-price price" *ngIf="this.title === 'Champion Tier'">
+        <span class="first-part-price">1</span>
+        <span class="second-part-price ">ETH</span>
+      </div>
+      <p class="access-period" *ngIf="this.title === 'Knight Tier'">Monthly Access</p>
+      <p class="access-period" *ngIf="this.title === 'Round Table Tier'">Pay Monthly</p>
+      <p class="access-period" *ngIf="this.title === 'Champion Tier'">Lifetime Subscription</p>
+      <div class="advantages-wrap">
+        <div class="flex advantages-item">
+          <img class="ok-icon" src="assets/okicon.svg" />
+          <p>Channel-specific list whitelists</p>
+        </div>
+        <div class="flex advantages-item">
+          <img class="ok-icon" src="assets/okicon.svg" />
+          <p>Channel lockdown</p>
+        </div>
+        <div class="flex advantages-item">
+          <img class="ok-icon" src="assets/okicon.svg" />
+          <p>Embed creator and more...</p>
+        </div>
+      </div>
+      <div class="square-btn-wrap">
+        <square-button text="Get Started" color="transparent" bordercolor="white"></square-button>
       </div>
     </div>
   </div>

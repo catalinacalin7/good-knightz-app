@@ -2,19 +2,29 @@
   background-color: #3A2657;
   color: white;
   border-radius: 21px;
-  padding: 0 8% 0 11%;
+  margin-bottom: 15%;
+
+  .card-title {
+    padding-left: 11%;
+    width: 67%;
+  }
 
   p {
     margin: 0;
-    font-size: 4vw;
+    font-size: 3.7vw;
+    font-family: MontserratSemiBold;
   }
 
   .advantages-wrap {
-    margin-top: 17%;
+    margin-top: 16%;
 
     .advantages-item {
       margin-bottom: 6.5%;
     }
+  }
+
+  .square-btn-wrap {
+    padding: 7vw 4vw 10vw 0;
   }
 
   h1 {
@@ -44,7 +54,9 @@
     padding-right: 3%;
   }
 
-  .knight-tier-wrap {
+  .content-wrap {
+    padding: 0 6% 0 11%;
+
     .knight-tier-price {
       span {
 
@@ -60,6 +72,28 @@
           height: 14vw;
         }
       }
+    }
+  }
+}
+
+.round-table-card {
+  background-color: #7D59E0;
+
+  .access-period {
+    margin-top: 6%;
+  }
+
+  .content-wrap .knight-tier-price {
+    span:nth-of-type(1) {
+      color: #3A2657;
+      font-size: 10vw;
+    }
+
+    span:nth-of-type(2) {
+      color: white;
+      font-size: 10vw;
+      line-height: unset;
+      height: unset;
     }
   }
 }
