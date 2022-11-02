@@ -1,6 +1,6 @@
 <div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
   <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
-  <img src="/assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
+  <img src="assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
   <div class="content-wrap">
     <div>
       <div class="card-price" *ngIf="this.indexCard === 0">
@@ -18,7 +18,7 @@
         <span class="second-part-price">ETH</span>
       </div>
       <p class="access-period">{{this.cardItems[this.indexCard].access}}</p>
-      <img src="/assets/big-rock.svg" *ngIf="this.indexCard === 2" class="big-rock-img">
+      <img src="assets/big-rock.svg" *ngIf="this.indexCard === 2" class="big-rock-img">
       <div class="advantages-wrap">
         <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages">
           <img class="ok-icon" src="assets/okicon.svg" />
