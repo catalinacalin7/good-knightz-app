@@ -11,9 +11,11 @@ p {
 
 .pricing-stars-mobile {
   background-image: url(/assets/pricing-stars-mobile.svg);
-  background-size: contain;
+  background-size: 105vw;
   background-position-y: 2vw;
   background-repeat: no-repeat;
+  background-position-y: 1vw;
+  background-position-x: center;
 }
 
 h1 {
