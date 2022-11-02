@@ -1,40 +1,34 @@
-<div class="card" [ngClass]="{'round-table-card' : this.title === 'Round Table Tier'}">
-  <h1 class="card-title">{{this.title}}</h1>
+<div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
+  <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
   <div class="content-wrap">
     <div>
-      <div class="knight-tier-price price" *ngIf="this.title === 'Knight Tier'">
+      <div class="card-price" *ngIf="this.indexCard === 0">
         <span class="first-part-price">20</span>
-        <span class="second-part-price ">votes<br> per server</span>
+        <span class="second-part-price">votes<br> per server</span>
       </div>
 
-      <div class="knight-tier-price price" *ngIf="this.title === 'Round Table Tier'">
+      <div class="card-price" *ngIf="this.indexCard === 1">
         <span class="first-part-price">US</span>
-        <span class="second-part-price ">$9.99</span>
+        <span class="second-part-price">$9.99</span>
       </div>
 
-      <div class="knight-tier-price price" *ngIf="this.title === 'Champion Tier'">
+      <div class="card-price" *ngIf="this.indexCard === 2">
         <span class="first-part-price">1</span>
-        <span class="second-part-price ">ETH</span>
+        <span class="second-part-price">ETH</span>
       </div>
-      <p class="access-period" *ngIf="this.title === 'Knight Tier'">Monthly Access</p>
-      <p class="access-period" *ngIf="this.title === 'Round Table Tier'">Pay Monthly</p>
-      <p class="access-period" *ngIf="this.title === 'Champion Tier'">Lifetime Subscription</p>
+      <p class="access-period">{{this.cardItems[this.indexCard].access}}</p>
+
       <div class="advantages-wrap">
-        <div class="flex advantages-item">
+        <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages">
           <img class="ok-icon" src="assets/okicon.svg" />
-          <p>Channel-specific list whitelists</p>
-        </div>
-        <div class="flex advantages-item">
-          <img class="ok-icon" src="assets/okicon.svg" />
-          <p>Channel lockdown</p>
-        </div>
-        <div class="flex advantages-item">
-          <img class="ok-icon" src="assets/okicon.svg" />
-          <p>Embed creator and more...</p>
+          <p>{{advantage}}</p>
         </div>
       </div>
       <div class="square-btn-wrap">
-        <square-button text="Get Started" color="transparent" bordercolor="white"></square-button>
+        <square-button *ngIf="this.indexCard !== 1" text="Get Started" color="transparent" bordercolor="white">
+        </square-button>
+        <square-button *ngIf="this.indexCard === 1" text="Get Started" color="white">
+        </square-button>
       </div>
     </div>
   </div>

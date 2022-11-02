@@ -31,6 +31,12 @@ button {
   border-color: white;
 }
 
+.white {
+  color: #3A2657;
+  border-color: white;
+  background-color: white;
+}
+
 @media only screen and (min-width: 750px) {
   button {
     width: 20vw;

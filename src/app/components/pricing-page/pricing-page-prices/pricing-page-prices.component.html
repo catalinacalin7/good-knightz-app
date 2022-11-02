@@ -6,7 +6,7 @@
   </div>
   <app-secure-for-free></app-secure-for-free>
   <div class="prices-items-wrap">
-    <price-item *ngFor="let item of pricesItems" title="{{item.title}}"></price-item>
+    <price-item [indexCard]=index *ngFor="let index of [0,1,2]"></price-item>
   </div>
   <div class="contact-detail-wrap">
     <p>Professional server security audits and custom setup

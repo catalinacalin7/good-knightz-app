@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pricing-page-prices.component.scss']
 })
 export class PricingPagePricesComponent implements OnInit {
-  pricesItems = [
-    { title: 'Knight Tier' },
-    { title: 'Round Table Tier' },
-    { title: 'Champion Tier' }
-  ];
+  pricesItems = [0, 1, 2];
   constructor() {}
 
   ngOnInit(): void {}
