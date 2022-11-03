@@ -27,6 +27,10 @@ h1 {
 
 .defend-wrap {
   padding: 20vw 1vw 17vw;
+
+  .rounded-button-div > *:nth-child(2)  {
+    display: none;
+  }
 }
 
 .defend-title {
@@ -250,6 +254,11 @@ h1 {
   .defend-wrap {
     padding: 3% 0 3% 9%;
     display: flex;
+
+    .rounded-button-div > *:nth-child(2) {
+      display: block;
+      margin-left: 1.4vw;
+    }
   }
 
   .defend-title {

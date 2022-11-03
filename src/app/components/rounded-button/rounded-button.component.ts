@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RoundedButtonComponent implements OnInit {
   @Input() color = '';
   @Input() text = '';
+  @Input() img = '';
   src: string = '';
   constructor() {}
 

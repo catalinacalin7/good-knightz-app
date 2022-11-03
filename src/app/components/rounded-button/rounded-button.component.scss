@@ -1,38 +1,43 @@
 button {
   background-color: #9948E6;
   color: white;
-  width: 77%;
   font-size: 4.7vw;
   border: none;
   border-radius: 25px;
   margin: auto;
   display: flex;
+  padding: 3vw 9vw;
   align-items: center;
   justify-content: center;
-  padding: 3% 0;
   font-family: MontserratSemiBold;
+
+  &.dark-violet {
+    background-color: #3A2657;
+  }
 }
 
 span {
-  padding-left: 7%;
+  margin-left: 3vw;
 }
 
-.icon1 {
-  width: 12%;
+img {
+  width: 9vw;
 }
 
 @media only screen and (min-width: 750px) {
   button {
     font-size: 1.3vw;
-    width: 89%;
-    padding: 3.4%;
     font-family: MontserratRegular;
+    padding: 0.6vw 2.4vw 0.6vw 2.15vw;
+
+    &:hover {
+      cursor: pointer
+    }
   }
 
   .transparent {
     color: white;
     background-color: #3A2657;
-    padding: 4.4%;
   }
 
   .white {
@@ -46,12 +51,12 @@ span {
   }
 
   span {
-    padding-left: 4%;
+    padding-left: 0.8vw;
+    margin: 0;
   }
 
-  .icon1,
-  .twitter,
-  .support {
-    width: 11%;
+  img {
+    max-height: 1.75vw;
+    width: auto;
   }
 }
