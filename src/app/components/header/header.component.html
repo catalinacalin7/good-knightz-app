@@ -1,6 +1,14 @@
 <div class="flex header-wrap">
   <img src="assets/Logo.svg" class="logo-img" />
-  <img src="assets/burger-menu.svg" class="burger-menu" />
+  <img src="assets/burger-menu.svg" class="burger-menu" (click)="changeDisplayBurgerMenu()" />
+  <div class="burger-menu-content" *ngIf="this.isOpenBurger">
+    <div (click)="changeRoute('features')" [ngClass]="{'active-mobile' : getActiveLink() === 'features'}">
+      <p>Features</p>
+    </div>
+    <div (click)="changeRoute('pricing')" [ngClass]="{'active-mobile' : getActiveLink() === 'pricing'}">
+      <p>Pricing</p>
+    </div>
+  </div>
   <div class="menu-buttons">
     <button [ngClass]="{'active' : getActiveLink() === 'features'}"
       (click)="changeRoute('features')"><span>Features</span>

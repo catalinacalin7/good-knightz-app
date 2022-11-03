@@ -52,7 +52,40 @@
   width: 15vw;
 }
 
+.burger-menu-content {
+  display: none;
+}
+
 @media only screen and (max-width: 750px) {
+  .burger-menu-content {
+    display: block;
+    position: absolute;
+    top: 19vw;
+    right: 10vw;
+    background-color: #251B33;
+    border: 2px solid white;
+    border-bottom: none;
+
+    .active-mobile {
+      background-color: #DE9CEA;
+      color: #251B33;
+    }
+
+    div {
+      &:active {
+        background-color: rgb(78, 62, 100);
+      }
+
+      p {
+        padding: 2vw 9vw;
+        font-family: MontserratBold;
+        font-size: 5vw;
+        margin: 0;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+
   .header-wrap {
     padding: 3vw 10vw 0 6vw;
     align-items: unset;

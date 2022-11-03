@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  isOpenBurger: boolean = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
@@ -20,7 +21,17 @@ export class HeaderComponent implements OnInit {
     return result;
   }
 
+  changeDisplayBurgerMenu() {
+    console.log('changeDisplayBurgerMenu');
+    this.isOpenBurger = !this.isOpenBurger;
+    console.log('this.isOpenBurger ', this.isOpenBurger);
+  }
+
   changeRoute(route: string) {
+    console.log('changeRoute ', route);
+    if (this.isOpenBurger) {
+      this.changeDisplayBurgerMenu();
+    }
     this.router.navigateByUrl('/' + route);
   }
 }
