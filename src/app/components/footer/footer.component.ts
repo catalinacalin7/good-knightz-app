@@ -10,19 +10,23 @@ export class FooterComponent implements OnInit {
   public footerButtons = [
     {
       text: 'Add to your server',
-      color: 'violet'
+      color: 'violet',
+      img: 'assets/icon1.png'
     },
     {
       text: 'Support',
-      color: 'white'
+      color: 'white',
+      img: 'assets/support.svg'
     },
     {
       text: 'Twitter',
-      color: 'blue'
+      color: 'blue',
+      img: 'assets/twitericon.svg'
     },
     {
       text: 'Documentation',
-      color: 'transparent'
+      color: 'transparent',
+      img: 'assets/docs.png'
     }
   ];
 
