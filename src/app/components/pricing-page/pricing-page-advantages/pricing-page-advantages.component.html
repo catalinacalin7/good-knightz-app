@@ -1,0 +1,28 @@
+<div class="advantages-body">
+  <div class="options-wrap">
+    <p>Free</p>
+    <p>I</p>
+    <p>II</p>
+    <p>III</p>
+  </div>
+  <div *ngFor="let part of advantageParts">
+    <p class="advantage-part">{{ part.title }}</p>
+    <div *ngFor="let item of part.partItems" class="part-item">
+      <p class="title">{{ item.title }}</p>
+      <div class="icons-wrap">
+        <div *ngFor="let icon of item.icon">
+          <img src="assets/yes-icon.svg" *ngIf="icon === 'yes'" />
+          <img src="assets/no-icon.svg" *ngIf="icon === 'no'" />
+          <img src="assets/infinity-icon.svg" class="infinity" *ngIf="icon === 'infinity'" />
+          <span *ngIf="isNumber(icon)" class="number">{{icon}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arrows-wrap">
+    <img src="assets/icon-arrow-gray.svg" />
+    <img src="assets/icon-arrow-gray.svg" />
+    <img src="assets/icon-arrow-gray.svg" />
+    <img src="assets/icon-arrow-violet.svg" />
+  </div>
+</div>

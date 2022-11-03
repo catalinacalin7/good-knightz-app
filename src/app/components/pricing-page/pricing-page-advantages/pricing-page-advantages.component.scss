@@ -1,0 +1,87 @@
+.advantages-body {
+  background-color: white;
+  color: black;
+  padding: 17vw 7.5vw;
+
+  .options-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      font-family: MontserratBold;
+      font-size: 4.2vw;
+      color: #3A2657;
+
+      &:nth-of-type(2) {
+        font-size: 5.5vw;
+        margin-left: 6vw;
+      }
+
+      &:nth-of-type(3) {
+        font-size: 5.5vw;
+        margin-left: 10vw;
+      }
+
+      &:nth-of-type(4) {
+        font-size: 5.5vw;
+        margin-left: 8vw;
+        margin-right: 3vw;
+      }
+    }
+  }
+
+  .advantage-part {
+    background-color: #3A2657;
+    color: white;
+    padding: 7vw 4vw;
+    border-radius: 11px;
+    font-size: 3.7vw;
+    margin: 0;
+    font-family: MontserratBold;
+  }
+
+  .part-item {
+    display: flex;
+    padding: 0.3vw 4vw;
+    align-items: center;
+    margin-bottom: 1vw;
+
+    .title {
+      font-size: 4vw;
+      margin-right: 5vw;
+      width: 31vw;
+      font-family: MontserratSemiBold;
+    }
+
+    img {
+      width: 5.7vw;
+    }
+  }
+
+  .icons-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 41vw;
+
+    .number {
+      font-family: MontserratSemiBold;
+      font-size: 3.7vw;
+    }
+
+    .infinity {
+      width: 3.9vw;
+    }
+  }
+
+  .arrows-wrap {
+    text-align: end;
+    margin-right: 1vw;
+    margin-top: 3vw;
+
+    img {
+      width: 10vw;
+      margin-left: 2vw;
+    }
+  }
+}
