@@ -15,23 +15,24 @@
 
       &:nth-of-type(2) {
         font-size: 5.5vw;
-        margin-left: 6vw;
+        margin-left: 5.6vw;
       }
 
       &:nth-of-type(3) {
         font-size: 5.5vw;
-        margin-left: 10vw;
+        margin-left: 8.5vw;
       }
 
       &:nth-of-type(4) {
         font-size: 5.5vw;
-        margin-left: 8vw;
-        margin-right: 3vw;
+        margin-left: 6.7vw;
+        margin-right: 4.7vw;
       }
     }
   }
 
-  .advantage-part {
+
+  .advantage-part-title {
     background-color: #3A2657;
     color: white;
     padding: 7vw 4vw;
@@ -48,40 +49,113 @@
     margin-bottom: 1vw;
 
     .title {
-      font-size: 4vw;
+      font-size: 3.6vw;
       margin-right: 5vw;
-      width: 31vw;
+      width: 32vw;
       font-family: MontserratSemiBold;
     }
 
     img {
       width: 5.7vw;
+      margin: 0 0.65vw;
     }
   }
 
   .icons-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 41vw;
 
     .number {
       font-family: MontserratSemiBold;
       font-size: 3.7vw;
+      width: 7vw;
+      text-align: center;
     }
 
     .infinity {
       width: 3.9vw;
+      margin: 0 1.55vw;
+      margin-top: 0.4vw;
+    }
+
+    .icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   .arrows-wrap {
     text-align: end;
-    margin-right: 1vw;
+    margin-right: 2.2vw;
     margin-top: 3vw;
 
     img {
       width: 10vw;
-      margin-left: 2vw;
+      margin-left: 1.4vw;
+    }
+  }
+}
+
+.advantage-part {
+  &:nth-of-type(2) {
+    .part-item {
+
+      // Password & 2FA Protection
+      &:nth-of-type(1) {
+        p {
+          width: 28vw;
+          margin-right: 9vw;
+        }
+      }
+
+      // Server Panic Mode
+      &:nth-of-type(2) {
+        p {
+          width: 23vw;
+          margin-right: 14vw;
+        }
+      }
+    }
+  }
+
+  // Embed Creator
+  &:nth-of-type(3) {
+    .part-item {
+      &:nth-of-type(4) {
+        p {
+          width: 25vw;
+          margin-right: 12vw;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    .part-item {
+
+      // Server-wide link allowlist
+      &:nth-of-type(1) {
+        p {
+          width: 28vw;
+          margin-right: 9vw;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(5) {
+    .part-item {
+
+      // Webhook allowlist limit
+      &:nth-of-type(2) {
+        p {
+          width: 24vw;
+          margin-right: 13vw;
+        }
+      }
     }
   }
 }

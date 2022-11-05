@@ -5,4 +5,36 @@
 
 .site-body {
   background-color: #251B33;
+
+  .pricing-defender-wrap {
+    background: linear-gradient(180deg, white 14%, #251B33 30%, #251B33 50%);
+    padding-bottom: 7vw;
+    margin-top: -1vw;
+  }
+
+  .defend-wrap {
+    margin-top: -1vw;
+    background-color: white;
+    color: #251B33;
+    padding: 5vw 7vw;
+    text-align: center;
+
+    h1 {
+      font-family: MontserratBold;
+      font-size: 7.8vw;
+    }
+
+    p {
+      font-family: MontserratSemiBold;
+      font-size: 3.7vw;
+      margin-top: 4vw;
+      margin-bottom: 9vw;
+    }
+  }
+
+  img {
+    width: 111vw;
+    margin-left: -7vw;
+    margin-top: -8vw;
+  }
 }
