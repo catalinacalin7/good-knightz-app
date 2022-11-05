@@ -12,11 +12,15 @@
     margin-top: -1vw;
   }
 
+  .rounder-btn-wrap {
+    padding: 0 7vw;
+  }
+
   .defend-wrap {
     margin-top: -1vw;
     background-color: white;
     color: #251B33;
-    padding: 5vw 7vw;
+    padding: 5vw 0vw;
     text-align: center;
 
     h1 {
@@ -27,6 +31,7 @@
     p {
       font-family: MontserratSemiBold;
       font-size: 3.7vw;
+      padding: 0 9vw;
       margin-top: 4vw;
       margin-bottom: 9vw;
     }
