@@ -23,16 +23,17 @@
       <img src="assets/big-rock.svg" *ngIf="this.indexCard === 2" class="big-rock-img">
       <div class="advantages-wrap">
         <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages"
-          [ngClass]="{'unlimited-advantage' : advantage === 'Unlimited admins and more...'}">
+          [ngClass]="{'unlimited-advantage' : advantage === 'Unlimited admins and more...', 'whitelist-advantage' : advantage === 'Whitelist link limit increase to 1000'}">
           <img class="ok-icon" src="assets/okicon.svg" />
           <p>{{advantage}}</p>
         </div>
       </div>
       <div class="square-btn-wrap">
-        <square-button *ngIf="this.indexCard !== 1" styleParams="auto-smaller" text="Get Started" color="transparent"
-          bordercolor="white">
+        <square-button *ngIf="this.indexCard !== 1" styleParams="auto-smaller" text="Get Started"
+          color="transparent-violet" bordercolor="white">
         </square-button>
-        <square-button *ngIf="this.indexCard === 1" styleParams="auto-smaller" text="Get Started" color="white">
+        <square-button *ngIf="this.indexCard === 1" styleParams="auto-smaller" text="Get Started"
+          color="bright-violet-hover">
         </square-button>
       </div>
     </div>

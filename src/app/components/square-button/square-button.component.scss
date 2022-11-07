@@ -10,6 +10,12 @@ button {
   border: 3px solid #3A2657;
   background-color: #3A2657;
 
+  &:hover {
+    background-color: white;
+    color: #3A2657;
+    border-color: #3A2657;
+  }
+
   img {
     width: 4%;
     padding-left: 5%;
@@ -20,10 +26,52 @@ button {
   }
 }
 
-.transparent {
+.transparent-violet {
   border: 3px solid #321A70;
   color: #321A70;
   background-color: transparent;
+
+  &:hover {
+    background-color: white;
+    color: #3A2657;
+    border-color: white;
+
+    img {
+      filter: invert(47%) sepia(65%) saturate(6120%) hue-rotate(255deg) brightness(17%) contrast(88%);
+    }
+  }
+}
+
+.transparent-white {
+  color: #3A2657;
+  border-color: #3A2657;
+  background-color: white;
+
+  &:hover {
+    background-color: #3A2657;
+    color: white;
+    border-color: #3A2657;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7475%) hue-rotate(16deg) brightness(100%) contrast(102%);
+    }
+  }
+}
+
+.bright-violet-hover {
+  color: #3A2657;
+  border-color: white;
+  background-color: #ffffff;
+
+  &:hover {
+    background-color: #7D59E0;
+    color: white;
+    border-color: white;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7475%) hue-rotate(16deg) brightness(100%) contrast(102%);
+    }
+  }
 }
 
 .border-white {
@@ -42,26 +90,8 @@ button {
     width: 20vw;
     border-radius: 10px;
 
-    &:hover {
-      background-color: white;
-      color: #3A2657;
-      border-color: #3A2657;
-    }
-
     span {
       font-size: 1.6vw;
-    }
-  }
-
-  .transparent {
-    &:hover {
-      background-color: #3A2657;
-      color: white;
-      border-color: #3A2657;
-
-      img {
-        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7475%) hue-rotate(16deg) brightness(100%) contrast(102%);
-      }
     }
   }
 

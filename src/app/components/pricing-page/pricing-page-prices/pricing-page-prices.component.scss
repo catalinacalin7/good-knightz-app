@@ -79,7 +79,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 23vw;
-    margin-top: -46.5vw;
+    margin-top: -47.5vw;
   }
 
   .join-title {
@@ -104,5 +104,14 @@ h1 {
     display: flex;
     padding: 0 9%;
     justify-content: space-between;
+  }
+
+  .contact-detail-wrap {
+    margin: 0;
+    margin-bottom: 1vw;
+
+    p {
+      font-size: 1.13vw;
+    }
   }
 }
