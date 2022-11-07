@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  public footerItemsMobile = ['Privacy Policy', 'Terms Of Service', 'Support'];
+  public footerItemsMobile = [
+    {
+      text: 'Privacy Policy',
+      url: 'https://docs.goodknightbot.com/support/privacy-policy'
+    },
+    {
+      text: 'Terms Of Service',
+      url: 'https://docs.goodknightbot.com/support/terms-of-service'
+    },
+    {
+      text: 'Support',
+      url: 'https://discord.gg/GwDw95vPyT'
+    }
+  ];
   public footerButtons = [
     {
       text: 'Add to your server',

@@ -190,9 +190,14 @@ h1 {
 
   }
 
-  span {
+  span a {
     color: #f7a302;
     font-family: MontserratBold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -1,7 +1,9 @@
 <div class="footer-wrapper">
   <div class="footer-content-mobile txt-center">
     <div *ngFor="let item of footerItemsMobile" class="footer-item">
-      {{item}}
+      <a href="{{item.url}}">
+        {{item.text}}
+      </a>
     </div>
     <div class="flex icons-div">
       <img src="assets/twitericon.svg" class="logo-img" />
