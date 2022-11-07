@@ -13,14 +13,14 @@
   <div class="footer-content-desktop">
     <div class="btns-wrap txt-center">
       <rounded-button *ngFor="let item of footerButtons" text="{{item.text}}" color="{{item.color}}"
-      img="{{item.img}}" size="small">
+      img="{{item.img}}" url="{{item.url}}" size="small">
       </rounded-button>
     </div>
     <div class="footer-bottom-desktop">
       <p class="rarefied">© Rarefied Studios, LLC</p>
       <div>
-        <button class="desktop-btn">PRIVACY POLICY</button>
-        <button class="desktop-btn">TERMS OF SERVICE</button>
+        <button class="desktop-btn" (click)="goToPrivacyPolicy()">PRIVACY POLICY</button>
+        <button class="desktop-btn" (click)="goToTermsOfService()">TERMS OF SERVICE</button>
       </div>
     </div>
   </div>

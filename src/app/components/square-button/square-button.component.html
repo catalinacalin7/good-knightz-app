@@ -1,4 +1,4 @@
-<button
+<button (click)="navigateToUrl()"
   [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white'}">
   <span>{{this.text}}</span>
   <img src="assets/arrow-icon.svg" *ngIf="this.text === 'Get Started' && this.bordercolor !== 'white'" class="icon1">

@@ -9,8 +9,13 @@ export class SquareButtonComponent implements OnInit {
   @Input() color = '';
   @Input() text = '';
   @Input() bordercolor = '';
+  @Input() url = '';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  navigateToUrl(): void {
+    window.location.href = this.url;
+  }
 }
