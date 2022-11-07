@@ -58,6 +58,10 @@
     img {
       width: 5.7vw;
       margin: 0 0.65vw;
+
+      &:active {
+        content: url(/assets/icon-arrow-violet.svg);
+      }
     }
   }
 
@@ -95,6 +99,10 @@
     img {
       width: 10vw;
       margin-left: 1.4vw;
+
+      &:hover {
+        content: url(/assets/icon-arrow-violet.svg)
+      }
     }
   }
 }

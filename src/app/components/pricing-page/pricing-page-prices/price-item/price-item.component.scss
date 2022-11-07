@@ -144,3 +144,153 @@
     }
   }
 }
+
+.unlimited-advantage {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .round-table-card {
+    position: absolute;
+    margin-top: -2vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw !important;
+    padding-top: 1.7vw;
+    padding-bottom: 2vw;
+
+    .card-title {
+      font-size: 2.7vw !important;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    .access-period {
+      margin-top: 4%;
+    }
+
+    .content-wrap .card-price {
+
+      span:nth-of-type(2) {
+        color: white;
+        font-size: 3.2vw !important;
+        line-height: unset !important;
+        height: unset !important;
+      }
+    }
+  }
+
+  .big-rock-img {
+    display: none;
+  }
+
+  .most-popular-icon {
+    display: none;
+  }
+
+  .card {
+    width: 26vw;
+    text-align: center;
+
+    .square-btn-wrap {
+      padding: 0;
+      padding-bottom: 2vw;
+    }
+
+    .advantages-wrap {
+      margin: 0;
+      padding: 2.3vw 4vw 1.6vw;
+
+      .advantages-item {
+        margin-bottom: 1.3vw;
+
+        p {
+          min-width: 16vw;
+        }
+      }
+    }
+
+    .ok-icon {
+      width: 2vw;
+      margin-right: 1.2vw;
+    }
+
+    p {
+      font-size: 1.4vw;
+      text-align: left;
+    }
+
+    .card-title {
+      font-size: 2.4vw;
+      width: unset;
+      margin-top: 2.5vw;
+      padding: 0;
+    }
+
+    .access-period {
+      margin-top: 1.5vw;
+      font-size: 1.4vw;
+      text-align: center;
+      width: 100%;
+    }
+
+    .content-wrap {
+      padding: 0;
+
+      .card-price {
+        margin: 1vw 0;
+        padding: 0;
+        justify-content: center;
+
+        span {
+          &:nth-of-type(1) {
+            font-size: 3.2vw;
+          }
+
+          &:nth-of-type(2) {
+            font-size: 1.5vw;
+            line-height: 1.2vw;
+            height: 3vw;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .champion-card {
+
+    .content-wrap .card-price {
+
+      span:nth-of-type(1) {
+        font-size: 3.2vw;
+      }
+
+      span:nth-of-type(2) {
+        font-size: 3.2vw;
+        line-height: unset;
+        height: unset;
+      }
+    }
+  }
+
+  .round-advantage {
+    text-indent: -9999px;
+    line-height: 0;
+
+    &:after {
+      content: "Monthly Subscription";
+      text-indent: 0;
+      display: block;
+      line-height: initial;
+    }
+  }
+
+  .unlimited-advantage {
+    display: flex;
+  }
+}

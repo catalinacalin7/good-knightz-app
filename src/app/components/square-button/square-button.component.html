@@ -1,5 +1,5 @@
 <button
-  [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white'}">
+  [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white', 'auto-smaller': this.styleParams === 'auto-smaller'}">
   <span>{{this.text}}</span>
   <img src="assets/arrow-icon.svg" *ngIf="this.text === 'Get Started' && this.bordercolor !== 'white'" class="icon1">
   <img src="assets/white-arrow.svg" *ngIf="this.text === 'Get Started' && this.bordercolor === 'white'" class="icon1">

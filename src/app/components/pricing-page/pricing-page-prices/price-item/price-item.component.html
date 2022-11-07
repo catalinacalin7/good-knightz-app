@@ -1,4 +1,5 @@
 <div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
+  <!-- <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop"> -->
   <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
   <img src="assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
   <div class="content-wrap">
@@ -17,18 +18,21 @@
         <span class="first-part-price">1</span>
         <span class="second-part-price">ETH</span>
       </div>
-      <p class="access-period">{{this.cardItems[this.indexCard].access}}</p>
+      <p class="access-period" [ngClass]="{'round-advantage' : this.indexCard === 1}">
+        {{this.cardItems[this.indexCard].access}}</p>
       <img src="assets/big-rock.svg" *ngIf="this.indexCard === 2" class="big-rock-img">
       <div class="advantages-wrap">
-        <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages">
+        <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages"
+          [ngClass]="{'unlimited-advantage' : advantage === 'Unlimited admins and more...'}">
           <img class="ok-icon" src="assets/okicon.svg" />
           <p>{{advantage}}</p>
         </div>
       </div>
       <div class="square-btn-wrap">
-        <square-button *ngIf="this.indexCard !== 1" text="Get Started" color="transparent" bordercolor="white">
+        <square-button *ngIf="this.indexCard !== 1" styleParams="auto-smaller" text="Get Started" color="transparent"
+          bordercolor="white">
         </square-button>
-        <square-button *ngIf="this.indexCard === 1" text="Get Started" color="white">
+        <square-button *ngIf="this.indexCard === 1" styleParams="auto-smaller" text="Get Started" color="white">
         </square-button>
       </div>
     </div>

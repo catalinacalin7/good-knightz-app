@@ -30,7 +30,11 @@ export class PriceItemComponent implements OnInit {
     {
       title: 'Champion Tier',
       access: 'Lifetime Subscription',
-      advantages: ['Unlimited whitelists', 'Unlimited moderators and admins']
+      advantages: [
+        'Unlimited whitelists',
+        'Unlimited moderators and admins',
+        'Unlimited admins and more...'
+      ]
     }
   ];
   constructor() {}
