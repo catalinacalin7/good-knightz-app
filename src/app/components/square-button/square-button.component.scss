@@ -42,8 +42,26 @@ button {
     width: 20vw;
     border-radius: 10px;
 
+    &:hover {
+      background-color: white;
+      color: #3A2657;
+      border-color: white;
+    }
+
     span {
       font-size: 1.6vw;
+    }
+  }
+
+  .transparent {
+    &:hover {
+      background-color: #3A2657;
+      color: white;
+      border-color: #3A2657;
+
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7475%) hue-rotate(16deg) brightness(100%) contrast(102%);
+      }
     }
   }
 }

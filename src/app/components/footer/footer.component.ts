@@ -25,7 +25,7 @@ export class FooterComponent implements OnInit {
     },
     {
       text: 'Documentation',
-      color: 'transparent',
+      color: 'dark-violet',
       img: 'assets/docs.png'
     }
   ];

@@ -13,6 +13,15 @@ button {
 
   &.dark-violet {
     background-color: #3A2657;
+
+    &:hover {
+      color: #3A2657;
+      background-color: white;
+
+      img {
+        filter: invert(47%) sepia(65%) saturate(6120%) hue-rotate(255deg) brightness(17%) contrast(88%);
+      }
+    }
   }
 }
 
@@ -40,23 +49,37 @@ img {
     padding: 0.6vw 2.4vw 0.6vw 2.15vw;
 
     &:hover {
-      cursor: pointer
+      cursor: pointer;
+      background-color: #3A2657;
     }
-  }
-
-  .transparent {
-    color: white;
-    background-color: #3A2657;
   }
 
   .white {
     background-color: white;
     color: #3A2657;
+
+    &:hover {
+      background-color: #3A2657;
+      color: white;
+
+      img {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(161deg) brightness(112%) contrast(102%);
+      }
+    }
   }
 
   .blue {
     background-color: #00B9F6;
     color: white;
+
+    &:hover {
+      color: #00B9F6;
+      background-color: white;
+
+      img {
+        filter: brightness(0) saturate(100%) invert(65%) sepia(54%) saturate(3968%) hue-rotate(156deg) brightness(95%) contrast(104%);
+      }
+    }
   }
 
   span {

@@ -36,7 +36,7 @@ h1 {
 
       p {
         max-height: 500px;
-        transition: max-height 0.20s;
+        // transition: max-height 0.20s;
         margin-top: 4vw;
       }
     }
@@ -46,7 +46,7 @@ h1 {
       font-size: 3vw;
       width: 100%;
       max-height: 0;
-      transition: max-height 0.20s, margin 0s 0.2s;
+      // transition: max-height 0.20s, margin 0s 0.2s;
       overflow: hidden;
       margin: 0;
     }
