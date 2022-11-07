@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <button
   [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white', 'auto-smaller': this.styleParams === 'auto-smaller'}">
+=======
+<button (click)="navigateToUrl()"
+  [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white'}">
+>>>>>>> 5d14b776220177c47ee91245b91eea58dbe06691
   <span>{{this.text}}</span>
   <img src="assets/arrow-icon.svg" *ngIf="this.text === 'Get Started' && this.bordercolor !== 'white'" class="icon1">
   <img src="assets/white-arrow.svg" *ngIf="this.text === 'Get Started' && this.bordercolor === 'white'" class="icon1">

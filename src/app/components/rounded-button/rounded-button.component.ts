@@ -9,8 +9,14 @@ export class RoundedButtonComponent implements OnInit {
   @Input() color = '';
   @Input() text = '';
   @Input() img = '';
+  @Input() url = '';
+
   src: string = '';
   constructor() {}
 
   ngOnInit(): void {}
+
+  navigateToUrl(): void {
+    window.location.href = this.url;
+  }
 }

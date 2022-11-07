@@ -23,30 +23,34 @@ h1 {
 
   .question-item {
     background-color: #3A2657;
-    color: #F5ADFF;
     font-family: MontserratSemiBold;
     margin: 0 0 6% 0;
     font-size: 3.8vw;
-    padding: 5.4% 6%;
+    padding: 5.2% 4.5%;
     border-radius: 9px;
     flex-direction: column;
 
+    img {
+      transition: all 0.3s ease 0s;
+    }
+
     &.question-item--visible-answer {
-      color: white;
+      img {
+        transform: rotate(135deg);
+      }
 
       p {
         max-height: 500px;
-        // transition: max-height 0.20s;
-        margin-top: 4vw;
+        margin-top: 9vw;
+        white-space: break-spaces;
       }
     }
 
     p {
       font-family: MontserratLight;
-      font-size: 3vw;
+      font-size: 3.86vw;
       width: 100%;
       max-height: 0;
-      // transition: max-height 0.20s, margin 0s 0.2s;
       overflow: hidden;
       margin: 0;
     }

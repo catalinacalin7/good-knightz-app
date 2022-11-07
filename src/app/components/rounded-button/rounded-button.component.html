@@ -1,4 +1,4 @@
-<button [ngClass]="this.color">
+<button [ngClass]="this.color" (click)="navigateToUrl()">
   <img src="{{this.img}}">
   <span>{{this.text}}</span>
 </button>

@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 $violet: #3A2657;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: white;
