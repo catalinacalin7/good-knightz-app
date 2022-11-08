@@ -10,13 +10,13 @@ h1 {
 .faq-wrapper {
   padding: 13% 0;
   background-image: url(/assets/stars5.png);
-  background-size: 92vw;
+  background-size: 91vw;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 20vw;
+  background-position-y: 16vw;
 
   .questions-wrapper {
-    margin-top: 20%;
+    margin-top: 15%;
     position: relative;
     padding: 0 6%;
   }
@@ -102,7 +102,10 @@ h1 {
 }
 
 .owl-gif {
-  display: none;
+  position: absolute;
+  width: 11vw;
+  left: 5.5vw;
+  margin-top: -9.5vw;
 }
 
 .rock-gif {

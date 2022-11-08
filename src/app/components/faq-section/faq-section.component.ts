@@ -10,12 +10,12 @@ export class FaqSectionComponent implements OnInit {
     {
       question: 'What features does Good Knight provide?',
       answer: `• In-server password protection
-      • Anti-link and link whitelisting
-      • Anti-webhook
-      • Password protected server lockdown
-      • Shielded mass mentions
-      • Protection against compromised bots
-      • Locked mod commands`,
+• Anti-link and link whitelisting
+• Anti-webhook
+• Password protected server lockdown
+• Shielded mass mentions
+• Protection against compromised bots
+• Locked mod commands`,
       shouldDisplayAnswer: false
     },
     {
