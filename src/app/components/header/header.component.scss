@@ -60,15 +60,40 @@
   .burger-menu-content {
     display: block;
     position: absolute;
-    top: 19vw;
-    right: 10vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 34vw;
+    padding-bottom: 6vw;
     background-color: #251B33;
-    border: 2px solid white;
-    border-bottom: none;
+    text-align: center;
+
+    > div {
+      position: relative;
+
+      > img {
+          position: absolute;
+          top: 8.4%;
+          right: 17.5%;
+          width: 5.5vw;
+      }
+    }
 
     .active-mobile {
-      background-color: #DE9CEA;
-      color: #251B33;
+//      background-color: #DE9CEA;
+//      color: #251B33;
+    }
+
+    .burger-sub-menu {
+      margin-top: 5vw;
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 3.4vw;
+        font-size: 3.8vw;
+      }
     }
 
     div {
@@ -76,12 +101,27 @@
         background-color: rgb(78, 62, 100);
       }
 
+      &:nth-child(2) p {
+        margin-top: 1.6vw;
+      }
+
       p {
-        padding: 2vw 9vw;
         font-family: MontserratBold;
-        font-size: 5vw;
+        font-size: 9.8vw;
         margin: 0;
-        border-bottom: 2px solid white;
+      }
+    }
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 13vw;
+
+      img {
+        width: 8vw;
+      }
+
+      .whitespace {
+        width: 11vw;
       }
     }
   }
@@ -98,10 +138,12 @@
 
   .logo-img {
     width: 37vw;
+    z-index: 1;
   }
 
   .burger-menu {
     width: 11%;
+    z-index: 1;
     display: inline-block;
   }
 
