@@ -111,19 +111,36 @@
 
       >img {
         position: absolute;
-        top: 8.4%;
+        top: 5vw;
         right: 17.5%;
         width: 5.5vw;
+        filter: brightness(0) invert(1);
+
+        &.arrow-icon--rotated {
+          transform: rotate(180deg);
+        }
       }
     }
 
     .active-mobile {
-      //      background-color: #DE9CEA;
-      //      color: #251B33;
+      color: #DE9CEA;
+
+      img {
+        filter: unset;
+      }
     }
 
     .burger-sub-menu {
       margin-top: 5vw;
+      display: none;
+
+      &.burger-sub-menu--visible {
+        display: block;
+      }
+
+      .burger-sub-menu--visible+img {
+        transform: unset;
+      }
 
       a {
         color: white;
@@ -135,10 +152,6 @@
     }
 
     div {
-      &:active {
-        background-color: rgb(78, 62, 100);
-      }
-
       &:nth-child(2) p {
         margin-top: 1.6vw;
       }
@@ -166,8 +179,8 @@
   }
 
   .header-wrap {
-    padding: 3vw 10vw 0 6vw;
-    align-items: unset;
+    padding: 3vw 10.5vw 0 6vw;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -181,12 +194,17 @@
   }
 
   .burger-menu {
-    width: 11%;
+    width: auto;
+    height: 6vw;
     z-index: 1;
     display: inline-block;
   }
 
   .menu-buttons {
     display: none;
+  }
+
+  .close-btn {
+    margin-right: 1.2vw;
   }
 }

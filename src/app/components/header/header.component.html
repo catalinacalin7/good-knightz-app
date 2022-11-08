@@ -1,11 +1,14 @@
 <div class="flex header-wrap">
-  <img src="assets/Logo.svg" class="logo-img" />
-  <img src="assets/burger-menu.svg" class="burger-menu" (click)="changeDisplayBurgerMenu()" />
+  <img src="assets/Logo.svg" class="logo-img" routerLink="features" />
+  <img src="assets/burger-menu.svg" class="burger-menu" (click)="changeDisplayBurgerMenu()"
+    *ngIf="!this.isOpenBurger" />
+  <img src="assets/x.svg" class="burger-menu close-btn" (click)="changeDisplayBurgerMenu()" *ngIf="this.isOpenBurger" />
   <div class="burger-menu-content" *ngIf="this.isOpenBurger">
-    <div (click)="changeRoute('features')" [ngClass]="{'active-mobile' : getActiveLink() === 'features'}">
+    <div (click)="this.isOpenSubmenu = !this.isOpenSubmenu"
+      [ngClass]="{'active-mobile' : getActiveLink() === 'features'}">
       <p>Features</p>
-      <img src="assets/Vector1.svg" class="arrow-icon">
-      <div class="burger-sub-menu">
+      <img src="assets/Vector1.svg" class="arrow-icon" [ngClass]="{'arrow-icon--rotated': this.isOpenSubmenu}">
+      <div class="burger-sub-menu" [ngClass]="{'burger-sub-menu--visible': this.isOpenSubmenu}">
         <a href="#layer-2-security">Layer-2 Security</a>
         <a href="#password-protection">Password Protection</a>
         <a href="#permission-wizard">Permission Wizard</a>
