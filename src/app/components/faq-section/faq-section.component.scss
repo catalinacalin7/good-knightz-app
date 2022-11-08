@@ -101,7 +101,34 @@ h1 {
   }
 }
 
+.owl-gif {
+  display: none;
+}
+
+.rock-gif {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
+
+  .rock-gif,
+  .owl-gif {
+    display: block;
+    position: absolute;
+  }
+
+  .owl-gif {
+    width: 6vw;
+    left: 5.5vw;
+    margin-top: 6.5vw;
+  }
+
+  .rock-gif {
+    width: 5vw;
+    right: 4.5vw;
+    margin-top: 28.5vw;
+  }
+
   .faq-wrapper {
     padding: 10% 0 6% 0;
     background-image: unset;

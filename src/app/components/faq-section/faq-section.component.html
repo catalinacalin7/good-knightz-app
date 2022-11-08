@@ -1,8 +1,10 @@
 <div class="faq-wrapper">
   <h1 class="txt-center">FAQ</h1>
+  <img src="assets/Owl.gif" class="owl-gif">
+  <img src="assets/Rock-gif.gif" class="rock-gif">
   <div class="questions-wrapper">
-  <div class="question-item flex" *ngFor="let question of questionsArray"
-    [ngClass]="question.shouldDisplayAsnwer ? 'question-item--visible-answer' : ''">
+    <div class="question-item flex" *ngFor="let question of questionsArray"
+      [ngClass]="question.shouldDisplayAnswer ? 'question-item--visible-answer' : ''">
       <div class="flex">
         <span>{{question.question}}</span>
         <img class="expand-btn" src="assets/plusbtn.svg" (click)="toggleVisibleAnswerClass(question)">

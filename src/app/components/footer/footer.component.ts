@@ -25,7 +25,8 @@ export class FooterComponent implements OnInit {
       text: 'Add to your server',
       color: 'violet',
       img: 'assets/icon1.png',
-      url: 'https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot'
+      url:
+        'https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot'
     },
     {
       text: 'Support',
@@ -52,10 +53,16 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {}
 
   goToPrivacyPolicy(): void {
-    window.location.href = "https://docs.goodknightbot.com/support/privacy-policy";
+    window.location.href =
+      'https://docs.goodknightbot.com/support/privacy-policy';
   }
 
   goToTermsOfService(): void {
-    window.location.href = "https://docs.goodknightbot.com/support/terms-of-service";
+    window.location.href =
+      'https://docs.goodknightbot.com/support/terms-of-service';
+  }
+
+  goToTwitter(): void {
+    window.location.href = 'https://twitter.com/thegoodknightz';
   }
 }
