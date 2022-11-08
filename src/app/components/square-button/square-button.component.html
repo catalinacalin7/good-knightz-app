@@ -1,5 +1,5 @@
 <button (click)="navigateToUrl()"
-  [ngClass]="{'transparent' : this.color === 'transparent', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white', 'auto-smaller': this.styleParams === 'auto-smaller'}">
+  [ngClass]="{'bright-violet-hover' : this.color === 'bright-violet-hover', 'transparent-white' : this.color === 'transparent-white', 'transparent-violet' : this.color === 'transparent-violet', 'border-white' : this.bordercolor === 'white', 'white': this.color === 'white', 'auto-smaller': this.styleParams === 'auto-smaller'}">
   <span>{{this.text}}</span>
   <img src="assets/arrow-icon.svg" *ngIf="this.text === 'Get Started' && this.bordercolor !== 'white'" class="icon1">
   <img src="assets/white-arrow.svg" *ngIf="this.text === 'Get Started' && this.bordercolor === 'white'" class="icon1">

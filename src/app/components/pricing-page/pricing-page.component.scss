@@ -43,3 +43,45 @@
     margin-top: -8vw;
   }
 }
+
+.defend-pricing-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .defend-desktop {
+    display: flex;
+
+    .defend-wrap {
+      text-align: left;
+
+      h1 {
+        font-size: 3vw;
+      }
+
+      p {
+        font-size: 1.5vw;
+        padding: 0;
+      }
+    }
+  }
+
+  .pricing-defend-mobile {
+    display: none;
+  }
+
+  .defend-pricing-desktop {
+
+    display: flex;
+    width: 81vw !important;
+    height: fit-content !important;
+    margin: 0 !important;
+    margin-top: 3vw !important;
+    margin-left: 2vw !important;
+  }
+
+  .rounder-btn-wrap {
+    padding: 0 !important;
+  }
+}
