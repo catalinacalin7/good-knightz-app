@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secure-for-free.component.scss']
 })
 export class SecureForFreeComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  getActiveLink() {
+    var n = window.location.href.lastIndexOf('/');
+    var result = window.location.href.substring(n + 1);
+    if (result === '') {
+      return 'features';
+    }
+    return result;
   }
-
 }
