@@ -9,11 +9,11 @@
       <p>Features</p>
       <img src="assets/Vector1.svg" class="arrow-icon" [ngClass]="{'arrow-icon--rotated': this.isOpenSubmenu}">
       <div class="burger-sub-menu" [ngClass]="{'burger-sub-menu--visible': this.isOpenSubmenu}">
-        <a href="#layer-2-security">Layer-2 Security</a>
-        <a href="#password-protection">Password Protection</a>
-        <a href="#permission-wizard">Permission Wizard</a>
-        <a href="#panic-mode">Panic Mode</a>
-        <a href="#anti-link">Anti-link, anti-webhook <br /> and more..</a>
+        <a routerLink="features" fragment="layer2-sec-wrap">Layer-2 Security</a>
+        <a routerLink="features" fragment="password-prot-wrap">Password Protection</a>
+        <a routerLink="features" fragment="panic-mode-wrap">Panic Mode</a>
+        <a routerLink="features" fragment="power-wizard-wrap">Permission Wizard</a>
+        <a routerLink="features" fragment="anti-link-wrap">Anti-link, anti-webhook <br /> and more..</a>
       </div>
     </div>
     <div (click)="changeRoute('pricing')" [ngClass]="{'active-mobile' : getActiveLink() === 'pricing'}">
@@ -40,11 +40,14 @@
     </button>
   </div>
   <div class="anchor-menu" *ngIf="this.isOpenAnchorMenu">
-    <a href="#layer2-sec-wrap" (click)="changeDisplayAnchorMenu($event)">Layer-2 Security</a>
-    <a href="" (click)="changeDisplayAnchorMenu($event)">Password Protection</a>
-    <a href="" (click)="changeDisplayAnchorMenu($event)">Permission Wizard</a>
-    <a href="" (click)="changeDisplayAnchorMenu($event)">Panic Mode</a>
-    <a href="" (click)="changeDisplayAnchorMenu($event)">Anti-link, anti-webhook and more..</a>
+    <a routerLink="features" fragment="layer2-sec-wrap" (click)="changeDisplayAnchorMenu($event)">Layer-2 Security</a>
+    <a routerLink="features" fragment="password-prot-wrap" (click)="changeDisplayAnchorMenu($event)">Password
+      Protection</a>
+    <a routerLink="features" fragment="panic-mode-wrap" (click)="changeDisplayAnchorMenu($event)">Panic Mode</a>
+    <a routerLink="features" fragment="power-wizard-wrap" (click)="changeDisplayAnchorMenu($event)">Permission
+      Wizard</a>
+    <a routerLink="features" fragment="anti-link-wrap" (click)="changeDisplayAnchorMenu($event)">Anti-link,
+      anti-webhook and more..</a>
   </div>
   <img src="assets/Logo.svg" class="logo-img-hidden" />
 </div>
