@@ -4,9 +4,26 @@
   <div class="burger-menu-content" *ngIf="this.isOpenBurger">
     <div (click)="changeRoute('features')" [ngClass]="{'active-mobile' : getActiveLink() === 'features'}">
       <p>Features</p>
+      <img src="assets/Vector1.svg" class="arrow-icon">
+      <div class="burger-sub-menu">
+        <a href="#layer-2-security">Layer-2 Security</a>
+        <a href="#password-protection">Password Protection</a>
+        <a href="#permission-wizard">Permission Wizard</a>
+        <a href="#panic-mode">Panic Mode</a>
+        <a href="#anti-link">Anti-link, anti-webhook <br /> and more..</a>
+      </div>
     </div>
     <div (click)="changeRoute('pricing')" [ngClass]="{'active-mobile' : getActiveLink() === 'pricing'}">
       <p>Pricing</p>
+    </div>
+    <div class="social-media-icons">
+      <a href="https://twitter.com/thegoodknightz">
+        <img src="assets/twitericon.svg" />
+      </a>
+      <div class="whitespace"></div>
+      <a href="https://discord.com/invite/GwDw95vPyT">
+        <img src="assets/icon1.png" />
+      </a>
     </div>
   </div>
   <div class="menu-buttons">
