@@ -6,8 +6,11 @@
         <h1 class="defend-title">Defend your Discord realm from hackers</h1>
         <p class="descr-defend">The only bot that can protect your discord server after an account compromise</p>
         <div class="rounded-button-div">
-        <rounded-button text="Add to your server" img="assets/icon1.png" url="https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot"></rounded-button>
-        <rounded-button color="dark-violet" text="Documentation" img="assets/docs.png" url="https://docs.goodknightbot.com/"></rounded-button>
+          <rounded-button text="Add to your server" img="assets/icon1.png"
+            url="https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot">
+          </rounded-button>
+          <rounded-button color="dark-violet" text="Documentation" img="assets/docs.png"
+            url="https://docs.goodknightbot.com/"></rounded-button>
         </div>
       </div>
       <img src="assets/whitehatdesktop.svg" class="white-hat-desktop">
@@ -77,7 +80,7 @@
     </div>
   </div>
   <div class="learn-more-wrap txt-center">
-  <h1>Learn more about free and premium options <span><a href="/pricing#features-table">here</a></span></h1>
+    <h1>Learn more about free and premium options <span><a (click)="loadAnchor('features-table')">here</a></span></h1>
   </div>
   <app-faq-section></app-faq-section>
   <app-secure-for-free></app-secure-for-free>
