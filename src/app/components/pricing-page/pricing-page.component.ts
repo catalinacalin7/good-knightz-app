@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pricing-page.component.scss']
 })
 export class PricingPageComponent implements OnInit {
+  title = 'Defend your Discord realm from hackers';
+  paragraph =
+    'The only bot that can protect your discord server after an account compromise';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -31,11 +31,12 @@
     </div>
   </div>
   <div class="menu-buttons">
-    <button [ngClass]="{'active' : getActiveLink() === 'features'}"
-      (click)="changeRoute('features')"><span>Features</span>
+    <button [ngClass]="{'active' : getActiveLink() === 'features'}" (click)="changeRoute('features')"
+      class="cursor-pointer"><span>Features</span>
       <img [ngClass]="{'active' : getActiveLink() === 'features'}" class="arrow-icon" src="assets/Vector1.svg" />
     </button>
-    <button [ngClass]="{'active' : getActiveLink() === 'pricing'}" (click)="changeRoute('pricing')"><span>Pricing</span>
+    <button [ngClass]="{'active' : getActiveLink() === 'pricing'}" (click)="changeRoute('pricing')"
+      class="cursor-pointer"><span>Pricing</span>
     </button>
   </div>
   <img src="assets/Logo.svg" class="logo-img-hidden" />

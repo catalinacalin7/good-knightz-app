@@ -7,4 +7,5 @@
     </square-button>
   </div>
 </div>
-<img src="assets/unicorn-knight.svg" class="unicorn-knight">
+<img src="assets/unicorn-knight.svg" class="unicorn-knight"
+  [ngClass]="{'features-page' : getActiveLink() === 'features'}">

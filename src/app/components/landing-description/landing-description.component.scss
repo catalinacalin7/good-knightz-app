@@ -28,7 +28,7 @@ h1 {
 .defend-wrap {
   padding: 20vw 1vw 17vw;
 
-  .rounded-button-div > *:nth-child(2)  {
+  .rounded-button-div>*:nth-child(2) {
     display: none;
   }
 }
@@ -260,7 +260,7 @@ h1 {
     padding: 3% 0 3% 9%;
     display: flex;
 
-    .rounded-button-div > *:nth-child(2) {
+    .rounded-button-div>*:nth-child(2) {
       display: block;
       margin-left: 1.4vw;
     }
@@ -537,5 +537,6 @@ h1 {
     background-repeat: no-repeat;
     background-position-y: 7.2vw;
     background-position-x: 5vw;
+    overflow: hidden;
   }
 }

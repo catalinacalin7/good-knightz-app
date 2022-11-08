@@ -6,14 +6,23 @@
 .site-body {
   background-color: #251B33;
 
+  .rounder-btn-wrap {
+    padding: 0 7vw;
+  }
+
+  img {
+    width: 111vw;
+    margin-left: -7vw;
+    margin-top: -8vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
   .pricing-defender-wrap {
     background: linear-gradient(180deg, white 14%, #251B33 30%, #251B33 50%);
     padding-bottom: 7vw;
     margin-top: -1vw;
-  }
-
-  .rounder-btn-wrap {
-    padding: 0 7vw;
   }
 
   .defend-wrap {
@@ -36,49 +45,49 @@
       margin-bottom: 9vw;
     }
   }
-
-  img {
-    width: 111vw;
-    margin-left: -7vw;
-    margin-top: -8vw;
-  }
-}
-
-.defend-pricing-desktop {
-  display: none;
 }
 
 @media only screen and (min-width: 750px) {
-
-  .defend-desktop {
-    display: flex;
-
-    .defend-wrap {
-      text-align: left;
-
-      h1 {
-        font-size: 3vw;
-      }
-
-      p {
-        font-size: 1.5vw;
-        padding: 0;
-      }
-    }
-  }
 
   .pricing-defend-mobile {
     display: none;
   }
 
-  .defend-pricing-desktop {
+  .defend-wrapper {
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(/assets/desktop-defend.png);
+    height: 46vw;
+    background-size: cover;
+    background-position-y: -13vw;
+    margin-top: -4.5vw;
 
-    display: flex;
-    width: 81vw !important;
-    height: fit-content !important;
-    margin: 0 !important;
-    margin-top: 3vw !important;
-    margin-left: 2vw !important;
+    h1,
+    p {
+      position: absolute;
+      right: 9vw;
+      width: 36vw;
+    }
+
+    h1 {
+      font-family: 'MONTSERRATBOLD';
+      font-size: 3.3vw;
+      margin-top: 13.5vw;
+    }
+
+    p {
+      font-family: "MONTSERRATREGULAR";
+      font-size: 1.4vw;
+      margin-top: 23vw;
+    }
+
+    .rounder-btn-wrap {
+      position: absolute;
+      right: 1vw;
+      width: 44vw;
+      font-size: 3.3vw;
+      margin-top: 29.5vw;
+    }
   }
 
   .rounder-btn-wrap {

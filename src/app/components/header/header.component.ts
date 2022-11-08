@@ -15,11 +15,15 @@ export class HeaderComponent implements OnInit {
 
   getActiveLink() {
     var n = window.location.href.lastIndexOf('/');
-    var result = window.location.href.substring(n + 1);
-    if (result === '') {
+    var result = window.location.href.substring(n);
+    if (result.indexOf('/features') >= 0) {
       return 'features';
+    } else if (result === '') {
+      return 'features';
+    } else if (result.indexOf('/pricing') >= 0) {
+      return 'pricing';
     }
-    return result;
+    return 'features';
   }
 
   changeDisplayBurgerMenu() {

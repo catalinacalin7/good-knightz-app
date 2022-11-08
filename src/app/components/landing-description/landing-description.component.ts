@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-description.component.scss']
 })
 export class LandingDescriptionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  loadAnchor(anchor: string) {
+    window.location.pathname =
+      ('' + window.location).replace(/#[A-Za-z0-9_]*$/, '') + '#' + anchor;
   }
-
 }

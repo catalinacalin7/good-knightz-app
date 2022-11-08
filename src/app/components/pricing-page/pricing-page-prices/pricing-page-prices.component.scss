@@ -53,6 +53,12 @@ h1 {
   text-align: center;
   margin: 8% 8% 18%;
 
+  &:hover {
+    span {
+      cursor: pointer;
+    }
+  }
+
   p {
     font-size: 5vw;
     font-family: MontserratBold;
@@ -111,7 +117,7 @@ h1 {
     margin-bottom: 1vw;
 
     p {
-      font-size: 1.13vw;
+      font-size: 1.3vw;
     }
   }
 }

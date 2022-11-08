@@ -10,4 +10,8 @@ export class PricingPagePricesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  navigateToDetails() {
+    window.location.href = 'mailto:info@rarefiedstudios.com';
+  }
 }
