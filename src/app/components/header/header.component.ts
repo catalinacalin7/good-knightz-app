@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isOpenBurger: boolean = false;
+  isOpenSubmenu: boolean = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
