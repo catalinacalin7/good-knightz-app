@@ -61,7 +61,7 @@ export class PricingPageAdvantagesComponent implements OnInit {
           icon: ['yes', 'yes', 'yes', 'yes']
         },
         {
-          title: 'Channel-specific link allowlists',
+          title: 'Link allowlist limit',
           icon: [100, 200, 500, 'infinity']
         },
         {

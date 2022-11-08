@@ -91,7 +91,7 @@
     }
   }
 
-  .arrows-wrap {
+  .arrows-wrap-mobile {
     text-align: end;
     margin-right: 2.2vw;
     margin-top: 3vw;
@@ -107,62 +107,193 @@
   }
 }
 
-.advantage-part {
-  &:nth-of-type(2) {
-    .part-item {
+.arrows-wrap-desktop {
+  display: none;
+}
 
-      // Password & 2FA Protection
-      &:nth-of-type(1) {
-        p {
-          width: 28vw;
-          margin-right: 9vw;
+@media only screen and (max-width: 750px) {
+  .advantage-part {
+    &:nth-of-type(2) {
+      .part-item {
+
+        // Password & 2FA Protection
+        &:nth-of-type(1) {
+          p {
+            width: 28vw;
+            margin-right: 9vw;
+          }
+        }
+
+        // Server Panic Mode
+        &:nth-of-type(2) {
+          p {
+            width: 23vw;
+            margin-right: 14vw;
+          }
         }
       }
+    }
 
-      // Server Panic Mode
-      &:nth-of-type(2) {
-        p {
-          width: 23vw;
-          margin-right: 14vw;
+    // Embed Creator
+    &:nth-of-type(3) {
+      .part-item {
+        &:nth-of-type(4) {
+          p {
+            width: 25vw;
+            margin-right: 12vw;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      .part-item {
+
+        // Server-wide link allowlist
+        &:nth-of-type(1) {
+          p {
+            width: 28vw;
+            margin-right: 9vw;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .part-item {
+
+        // Webhook allowlist limit
+        &:nth-of-type(2) {
+          p {
+            width: 24vw;
+            margin-right: 13vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .arrows-wrap-mobile {
+    display: none;
+  }
+
+  .advantages-body {
+    padding: 6vw 9vw;
+
+    .icon-wrap {
+      width: 5vw;
+
+      .number {
+        font-size: 1.5vw;
+      }
+
+      .infinity {
+        width: 1.4vw !important;
+      }
+    }
+
+    .options-wrap {
+      margin-bottom: 1vw;
+
+      p {
+        font-size: 1.6vw !important;
+        text-indent: -9999px;
+        line-height: 0;
+        text-align: center;
+
+        &::after {
+          text-indent: 0;
+          display: block;
+          line-height: initial;
+        }
+
+        &:nth-of-type(1) {
+          margin: 0;
+          width: 5vw;
+          margin-right: 4.5vw;
+
+          &::after {
+            content: "Free Plan";
+          }
+        }
+
+        &:nth-of-type(2) {
+          margin: 0;
+          margin-right: 1.5vw;
+          width: 8vw;
+
+          &::after {
+            content: "Knight Tier";
+          }
+        }
+
+        &:nth-of-type(3) {
+          margin: 0;
+          width: 12vw;
+          margin-right: 0.6vw;
+
+          &::after {
+            content: "Round Table Tier";
+          }
+        }
+
+        &:nth-of-type(4) {
+          margin: 0;
+          width: 10vw;
+          margin-right: 6vw;
+
+          &::after {
+            content: "Champion Tier";
+          }
+        }
+      }
+    }
+
+    .advantage-part {
+      .advantage-part-title {
+        font-size: 1.2vw;
+        padding: 2vw;
+      }
+
+      .part-item {
+        padding: 0 9vw 0 2vw;
+        margin-bottom: 1.2vw;
+
+        &:nth-of-type(1) {
+          padding-top: 0.4vw;
+        }
+
+        .title {
+          font-size: 1.4vw;
+          width: 29vw;
+        }
+
+        img {
+          width: 2vw;
         }
       }
     }
   }
 
-  // Embed Creator
-  &:nth-of-type(3) {
-    .part-item {
-      &:nth-of-type(4) {
-        p {
-          width: 25vw;
-          margin-right: 12vw;
-        }
+  .arrows-wrap-desktop {
+    display: flex;
+    justify-content: end;
+
+    p {
+      color: #BEC6DE;
+      font-size: 1.4vw;
+      margin-left: 2.9vw;
+      font-family: MontserratBold;
+
+      &:last-of-type {
+        margin-right: 7.2vw;
       }
-    }
-  }
 
-  &:nth-of-type(4) {
-    .part-item {
-
-      // Server-wide link allowlist
-      &:nth-of-type(1) {
-        p {
-          width: 28vw;
-          margin-right: 9vw;
-        }
-      }
-    }
-  }
-
-  &:nth-of-type(5) {
-    .part-item {
-
-      // Webhook allowlist limit
-      &:nth-of-type(2) {
-        p {
-          width: 24vw;
-          margin-right: 13vw;
-        }
+      &:hover {
+        color: #3A2657;
+        text-decoration: underline;
       }
     }
   }
