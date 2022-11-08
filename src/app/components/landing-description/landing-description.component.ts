@@ -9,9 +9,4 @@ export class LandingDescriptionComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  loadAnchor(anchor: string) {
-    window.location.pathname =
-      ('' + window.location).replace(/#[A-Za-z0-9_]*$/, '') + '#' + anchor;
-  }
 }

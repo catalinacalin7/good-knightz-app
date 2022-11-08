@@ -56,6 +56,39 @@
   display: none;
 }
 
+@media only screen and (min-width: 750px) {
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .anchor-menu {
+    background-image: url(/assets/features-menu.svg);
+    width: 20vw;
+    position: absolute;
+    top: 9vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 33vw;
+    padding: 2.3vw 3vw;
+
+    a {
+      font-size: 1.4vw;
+      line-height: 1.6vw;
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin: 1vw;
+      font-family: "MontserratSemiBold";
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        color: #DE9CEA;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .burger-menu-content {
     display: block;
@@ -68,20 +101,20 @@
     background-color: #251B33;
     text-align: center;
 
-    > div {
+    >div {
       position: relative;
 
-      > img {
-          position: absolute;
-          top: 8.4%;
-          right: 17.5%;
-          width: 5.5vw;
+      >img {
+        position: absolute;
+        top: 8.4%;
+        right: 17.5%;
+        width: 5.5vw;
       }
     }
 
     .active-mobile {
-//      background-color: #DE9CEA;
-//      color: #251B33;
+      //      background-color: #DE9CEA;
+      //      color: #251B33;
     }
 
     .burger-sub-menu {
@@ -111,6 +144,7 @@
         margin: 0;
       }
     }
+
     .social-media-icons {
       display: flex;
       justify-content: center;

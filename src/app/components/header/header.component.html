@@ -27,13 +27,21 @@
     </div>
   </div>
   <div class="menu-buttons">
-    <button [ngClass]="{'active' : getActiveLink() === 'features'}" (click)="changeRoute('features')"
-      class="cursor-pointer"><span>Features</span>
-      <img [ngClass]="{'active' : getActiveLink() === 'features'}" class="arrow-icon" src="assets/Vector1.svg" />
+    <button [ngClass]="{'active' : getActiveLink() === 'features'}" class="cursor-pointer"><span
+        (click)="changeRoute('features')">Features</span>
+      <img [ngClass]="{'active' : getActiveLink() === 'features', 'rotate' : this.isOpenAnchorMenu}" class="arrow-icon"
+        src="assets/Vector1.svg" (click)="changeDisplayAnchorMenu($event)" />
     </button>
     <button [ngClass]="{'active' : getActiveLink() === 'pricing'}" (click)="changeRoute('pricing')"
       class="cursor-pointer"><span>Pricing</span>
     </button>
+  </div>
+  <div class="anchor-menu" *ngIf="this.isOpenAnchorMenu">
+    <a href="#layer2-sec-wrap" (click)="changeDisplayAnchorMenu($event)">Layer-2 Security</a>
+    <a href="" (click)="changeDisplayAnchorMenu($event)">Password Protection</a>
+    <a href="" (click)="changeDisplayAnchorMenu($event)">Permission Wizard</a>
+    <a href="" (click)="changeDisplayAnchorMenu($event)">Panic Mode</a>
+    <a href="" (click)="changeDisplayAnchorMenu($event)">Anti-link, anti-webhook and more..</a>
   </div>
   <img src="assets/Logo.svg" class="logo-img-hidden" />
 </div>

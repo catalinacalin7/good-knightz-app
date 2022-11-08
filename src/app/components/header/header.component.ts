@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isOpenBurger: boolean = false;
+  isOpenAnchorMenu: boolean = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
@@ -26,9 +27,12 @@ export class HeaderComponent implements OnInit {
   }
 
   changeDisplayBurgerMenu() {
-    console.log('changeDisplayBurgerMenu');
     this.isOpenBurger = !this.isOpenBurger;
-    console.log('this.isOpenBurger ', this.isOpenBurger);
+  }
+
+  changeDisplayAnchorMenu(event: Event) {
+    event.preventDefault();
+    this.isOpenAnchorMenu = !this.isOpenAnchorMenu;
   }
 
   changeRoute(route: string) {
