@@ -1,18 +1,13 @@
 import { NgModule } from '@angular/core';
-import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FeaturesPageComponent } from './components/features-page/features-page.component';
-import { PricingPageComponent } from './components/pricing-page/pricing-page.component';
+import { PremiumPageComponent } from './components/premium-page/premium-page.component';
 
 const routes: Routes = [
   { path: 'features', component: FeaturesPageComponent },
-  { path: 'pricing', component: PricingPageComponent },
+  { path: 'premium', component: PremiumPageComponent },
   { path: '**', redirectTo: 'features' }
 ];
-
-const routerOptions: ExtraOptions = {
-  useHash: false,
-  anchorScrolling: 'enabled'
-};
 
 @NgModule({
   imports: [

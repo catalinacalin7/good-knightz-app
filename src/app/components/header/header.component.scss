@@ -17,6 +17,15 @@
     .active {
       color: #DE9CEA;
 
+      &:hover {
+        color: white !important;
+
+        .arrow-icon {
+          visibility: visible;
+          filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(119%) contrast(102%)
+        }
+      }
+
       .arrow-icon {
         visibility: visible;
       }
@@ -30,19 +39,26 @@
       color: white;
       display: inline-flex;
       align-items: center;
+      transition: 0.3s;
 
       span {
-        margin-right: 9px;
+        margin-right: 1vw;
       }
 
       .arrow-icon {
         visibility: hidden;
         width: 1.2vw;
+        transition: 0.3s;
+        margin-top: 3%;
       }
 
       &:first-of-type {
-        margin-right: 68px;
+        margin-right: 9vw;
         margin-left: 5vw;
+      }
+
+      &:hover {
+        color: #DE9CEA;
       }
     }
   }
@@ -73,8 +89,8 @@
     top: 9vw;
     background-repeat: no-repeat;
     background-size: contain;
-    left: 33vw;
-    padding: 2.3vw 3vw;
+    left: 30.96vw;
+    padding: 1.7vw 3vw;
 
     a {
       font-size: 1.4vw;
@@ -82,6 +98,7 @@
       text-decoration: none;
       color: white;
       display: block;
+      transition: 0.3s;
       margin: 1vw;
       font-family: "MontserratSemiBold";
       cursor: pointer;
@@ -111,9 +128,9 @@
 
       >img {
         position: absolute;
-        top: 5vw;
-        right: 17.5%;
-        width: 5.5vw;
+        top: 3.5vw;
+        right: 26.5%;
+        width: 4.5vw;
         filter: brightness(0) invert(1);
 
         &.arrow-icon--rotated {
@@ -158,7 +175,7 @@
 
       p {
         font-family: MontserratBold;
-        font-size: 9.8vw;
+        font-size: 6.8vw;
         margin: 0;
       }
     }
@@ -207,4 +224,25 @@
   .close-btn {
     margin-right: 1.2vw;
   }
+}
+
+$first : 0;
+$second : 2;
+$leftindex : 0;
+
+@while $second < 20 {
+  @for $i from $first through $second {
+    @media only screen and (min-width: calc(1000px + #{$i} * 100px)) {
+      $left: calc(31.1vw - 0.2vw * #{$leftindex} + 0.1vw * #{$i});
+
+      .anchor-menu {
+        left: $left;
+        padding-bottom: $second;
+      }
+    }
+  }
+
+  $first: calc($first + 2);
+  $second: calc($second + 2);
+  $leftindex: calc($leftindex + 0.8);
 }

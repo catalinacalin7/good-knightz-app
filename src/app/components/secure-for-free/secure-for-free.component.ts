@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-secure-for-free',
@@ -6,16 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secure-for-free.component.scss']
 })
 export class SecureForFreeComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   getActiveLink() {
     var n = window.location.href.lastIndexOf('/');
-    var result = window.location.href.substring(n + 1);
-    if (result === '') {
+    var result = window.location.href.substring(n);
+    if (result.indexOf('/features') >= 0) {
       return 'features';
+    } else if (result === '') {
+      return 'features';
+    } else if (result.indexOf('/premium') >= 0) {
+      return 'premium';
     }
-    return result;
+    return 'features';
+  }
+
+  goToPriceTable() {
+    if (this.getActiveLink() === 'features') {
+      this.router.navigateByUrl('/premium#features-table');
+    } else {
+      let x = document.querySelector('#features-table');
+      if (x) {
+        x.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
   }
 }

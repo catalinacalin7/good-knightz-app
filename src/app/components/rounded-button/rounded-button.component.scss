@@ -10,6 +10,8 @@ button {
   align-items: center;
   justify-content: center;
   font-family: MontserratSemiBold;
+  cursor: pointer;
+  transition: 0.3s;
 
   &.dark-violet {
     background-color: #3A2657;

@@ -65,4 +65,8 @@ export class FooterComponent implements OnInit {
   goToTwitter(): void {
     window.location.href = 'https://twitter.com/thegoodknightz';
   }
+
+  goToServer(): void {
+    window.location.href = 'https://discord.gg/GwDw95vPyT';
+  }
 }

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  font-family: MontserratRegular;
+}
+
+p {
+  font-size: 3.8vw;
+  font-family: MontserratMedium;
+  margin: 5% 5%;
+}
+
+.premium-stars-mobile {
+  background-image: url(/assets/premium-stars-mobile.svg);
+  background-size: 105vw;
+  background-position-y: 2vw;
+  background-repeat: no-repeat;
+  background-position-y: 1vw;
+  background-position-x: center;
+}
+
+h1 {
+  font-family: MontserratBold;
+  font-size: 7.8vw;
+}
+
+.site-body {
+  background-color: #251B33;
+}
+
+.join-title {
+  padding: 17vw 6vw 0 6vw;
+}
+
+.join-description {
+  text-align: center;
+  font-size: 3.7vw;
+  padding: 3% 7% 13vw;
+  line-height: 4.4vw;
+  margin: 0;
+}
+
+.join-wrap {
+  text-align: center;
+}
+
+.prices-items-wrap {
+  width: 100%;
+  padding: 0 6%;
+  box-sizing: border-box;
+}
+
+.contact-detail-wrap {
+  text-align: center;
+  margin: 8% 8% 18%;
+
+  &:hover {
+    span {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 5vw;
+    font-family: MontserratBold;
+
+    span {
+      font-family: 'MontserratBold';
+      text-decoration: underline;
+      transition: 0.3s;
+      color: #F7A302;
+
+      &:hover {
+        color: rgb(177, 117, 6);
+      }
+    }
+  }
+}
+
+.most-popular-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .most-popular-desktop {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23vw;
+    margin-top: -47.5vw;
+  }
+
+  .join-title {
+    font-size: 3.3vw;
+    padding-top: 3vw;
+  }
+
+  .join-description {
+    font-size: 1.3vw;
+    padding: 1.2vw 33vw 3vw;
+    line-height: unset;
+  }
+
+  .premium-stars-mobile {
+    background-image: url(/assets/starts-premium-desktop.svg);
+    background-size: 95vw;
+    background-position-x: right;
+    background-position-y: 0;
+  }
+
+  .prices-items-wrap {
+    display: flex;
+    padding: 0 9%;
+    justify-content: space-between;
+  }
+
+  .contact-detail-wrap {
+    margin: 0;
+    margin-bottom: 1vw;
+
+    p {
+      font-size: 1.6vw;
+    }
+  }
+}

@@ -11,10 +11,10 @@ import { SecureForFreeComponent } from './components/secure-for-free/secure-for-
 import { SquareButtonComponent } from './components/square-button/square-button.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PricingPageComponent } from './components/pricing-page/pricing-page.component';
-import { PricingPagePricesComponent } from './components/pricing-page/pricing-page-prices/pricing-page-prices.component';
-import { PriceItemComponent } from './components/pricing-page/pricing-page-prices/price-item/price-item.component';
-import { PricingPageAdvantagesComponent } from './components/pricing-page/pricing-page-advantages/pricing-page-advantages.component';
+import { PremiumPageComponent } from './components/premium-page/premium-page.component';
+import { PremiumPagePricesComponent } from './components/premium-page/premium-page-prices/premium-page-prices.component';
+import { PriceItemComponent } from './components/premium-page/premium-page-prices/price-item/price-item.component';
+import { PremiumPageAdvantagesComponent } from './components/premium-page/premium-page-advantages/premium-page-advantages.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +27,10 @@ import { PricingPageAdvantagesComponent } from './components/pricing-page/pricin
     SecureForFreeComponent,
     SquareButtonComponent,
     FooterComponent,
-    PricingPageComponent,
-    PricingPagePricesComponent,
+    PremiumPageComponent,
+    PremiumPagePricesComponent,
     PriceItemComponent,
-    PricingPageAdvantagesComponent
+    PremiumPageAdvantagesComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

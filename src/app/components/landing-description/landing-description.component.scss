@@ -147,9 +147,11 @@ h1 {
 .power-wizard-wrap {
   background-image: url(/assets/wizard.png);
   background-color: white;
-  background-size: cover;
+  background-size: 189vw;
   color: #3a2657;
-  padding: 21vw 0 129vw 0;
+  background-position-x: -43vw;
+  background-repeat: no-repeat;
+  padding: 21vw 0 131vw 0;
 
   p {
     margin: 5% 6%;
@@ -183,6 +185,7 @@ h1 {
 .learn-more-wrap {
   background-color: white;
   color: #251b33;
+  transition: 0.3s;
 
   h1 {
     padding: 10% 1%;
@@ -229,15 +232,23 @@ h1 {
   display: none;
 }
 
-.wizard-title-mobile {
-  display: block;
-}
 
-.wizard-title-desktop {
-  display: none;
-}
 
 @media only screen and (min-width: 750px) {
+
+  .ipad-wrap {
+    img {
+      width: 93vw;
+      margin-top: -4vw;
+      left: 11vw;
+      transition: 0.3s;
+      position: absolute;
+    }
+  }
+
+  .ipad-wrap {
+    height: 69vw;
+  }
 
   .iphones-mobile {
     display: none;
@@ -419,6 +430,17 @@ h1 {
     }
   }
 
+  .ipad-wrap {
+    img {
+      &:hover {
+        width: 98vw;
+        left: 8.5vw;
+        margin-top: -6vw;
+      }
+    }
+
+  }
+
   .panic-mode-wrap {
     display: flex;
     text-align: left;
@@ -461,14 +483,7 @@ h1 {
     margin-right: 6vw;
   }
 
-  /// power wizard
-
-  .wizard-title-mobile {
-    display: none;
-  }
-
-  .wizard-title-desktop {
-    display: block;
+  .wizard-title {
     font-size: 3.3vw;
   }
 
@@ -480,9 +495,10 @@ h1 {
     padding: 8vw 0 45vw 0;
     background-position-y: 2vw;
     background-repeat: no-repeat;
+    background-position-x: unset;
 
     p {
-      font-size: 1.2vw;
+      font-size: 1.4vw;
       margin-top: 1%;
 
       .bold-span {
@@ -507,6 +523,7 @@ h1 {
       margin: 0;
       font-size: 1.4vw;
       margin-top: 1.5%;
+
     }
 
     .flex-reverse {

@@ -17,6 +17,8 @@ export class SquareButtonComponent implements OnInit {
   ngOnInit(): void {}
 
   navigateToUrl(): void {
-    window.location.href = this.url;
+    if (this.url) {
+      window.location.href = this.url;
+    }
   }
 }

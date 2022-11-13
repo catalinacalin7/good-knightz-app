@@ -1,0 +1,28 @@
+<div class="advantages-body" id="advantages-body">
+  <div class="options-wrap">
+    <p>Free<br /><span class="tier">Tier</span></p>
+    <p>I <br /><span class="tier">Tier</span></p>
+    <p>II <br /><span class="tier">Tier</span></p>
+    <p>III <br /><span class="tier">Tier</span></p>
+  </div>
+  <div *ngFor="let part of advantageParts" class="advantage-part">
+    <p class="advantage-part-title">{{ part.title }}</p>
+    <div *ngFor="let item of part.partItems" class="part-item">
+      <p class="title">{{ item.title }}</p>
+      <div class="icons-wrap">
+        <div *ngFor="let icon of item.icon" class="icon-wrap">
+          <img src="assets/yes-icon.svg" *ngIf="icon === 'yes'" />
+          <img src="assets/no-icon.svg" *ngIf="icon === 'no'" />
+          <img src="assets/infinity-icon.svg" class="infinity" *ngIf="icon === 'infinity'" />
+          <div *ngIf="isNumber(icon)" class="number">{{icon}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arrows-wrap-mobile">
+    <img *ngFor="let item of [1, 2, 3, 4]" src="assets/arrow-gray-icon.svg" (click)="goToTable()" />
+  </div>
+  <div class="arrows-wrap-desktop">
+    <p *ngFor="let item of [1, 2, 3, 4]">Get Started</p>
+  </div>
+</div>

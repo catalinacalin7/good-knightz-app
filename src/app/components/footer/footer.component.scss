@@ -103,6 +103,12 @@
         padding: 0;
         padding-left: 37px;
         text-align: right;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: #DE9CEA;
+        }
       }
     }
   }

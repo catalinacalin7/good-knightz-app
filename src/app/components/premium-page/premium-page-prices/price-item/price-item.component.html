@@ -1,0 +1,43 @@
+<div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
+  <!-- <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop"> -->
+  <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
+  <img src="assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
+  <div class="content-wrap">
+    <div>
+      <div class="card-price" *ngIf="this.indexCard === 0">
+        <span class="first-part-price">20</span>
+        <span class="second-part-price">votes<br> per server</span>
+      </div>
+
+      <div class="card-price" *ngIf="this.indexCard === 1">
+        <span class="first-part-price">US</span>
+        <span class="second-part-price">$9.99</span>
+      </div>
+
+      <div class="card-price" *ngIf="this.indexCard === 2">
+        <span class="first-part-price">1</span>
+        <span class="second-part-price">ETH</span>
+      </div>
+      <p class="access-period" [ngClass]="{'round-advantage' : this.indexCard === 1}">
+        {{this.cardItems[this.indexCard].access}}</p>
+      <img src="assets/big-rock.svg" *ngIf="this.indexCard === 2" class="big-rock-img">
+      <div class="advantages-wrap">
+        <div class="flex advantages-item" *ngFor="let advantage of this.cardItems[this.indexCard].advantages"
+          [ngClass]="{'unlimited-advantage' : advantage === 'Unlimited admins and more...', 'whitelist-advantage' : advantage === 'Whitelist link limit increase to 1000'}">
+          <img class="ok-icon" src="assets/okicon.svg" />
+          <p>{{advantage}}</p>
+        </div>
+      </div>
+      <div class="square-btn-wrap">
+        <square-button *ngIf="this.indexCard !== 1" styleParams="auto-smaller" text="Get Started"
+          color="transparent-violet" bordercolor="white"
+          url="https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot">
+        </square-button>
+        <square-button *ngIf="this.indexCard === 1" styleParams="auto-smaller" text="Get Started"
+          color="bright-violet-hover"
+          url="https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot">
+        </square-button>
+      </div>
+    </div>
+  </div>
+</div>
