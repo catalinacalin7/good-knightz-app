@@ -53,7 +53,6 @@ export class HeaderComponent implements OnInit {
   }
 
   changeRoute(event: Event, route: string) {
-    console.log('changeRoute ', route);
     if (route === this.getActiveLink() && route === 'features') {
       this.changeDisplayAnchorMenu(event);
     } else {
