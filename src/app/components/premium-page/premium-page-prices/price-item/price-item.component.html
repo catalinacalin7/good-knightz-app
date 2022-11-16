@@ -1,5 +1,5 @@
 <div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
-  <!-- <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop"> -->
+  <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop">
   <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
   <img src="assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
   <div class="content-wrap">

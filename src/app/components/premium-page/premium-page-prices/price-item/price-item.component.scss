@@ -71,13 +71,6 @@
     color: #FFC404;
   }
 
-  //   .price {
-  //     margin-top: 2%;
-  //     display: flex;
-  //     align-items: flex-end;
-  //     padding-right: 3%;
-  //   }
-
   .content-wrap {
     padding: 0 6% 0 11%;
 
@@ -134,11 +127,9 @@
 .champion-card {
   p {
     width: 65%;
-    // margin-top: 4% !important;
   }
 
   .content-wrap .card-price {
-    // margin-top: 0;
 
     span:nth-of-type(1) {
       font-size: 10vw;
@@ -156,9 +147,27 @@
   display: none;
 }
 
+.most-popular-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
-  .round-table-card {
+
+  .most-popular-desktop {
+    display: block;
     position: absolute;
+    left: 0;
+    overflow: visible;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23vw;
+    margin-top: -5.5vw;
+  }
+
+  .round-table-card {
+    position: relative;
+    overflow: visible;
     margin-top: -2vw;
     left: 0;
     right: 0;
@@ -209,48 +218,14 @@
   }
 
   .card {
+    transition: 0.1s;
     width: 26vw;
     text-align: center;
+    z-index: 2;
 
-
-    // &:hover {
-    //   p {
-    //     font-size: 1.45vw;
-    //   }
-
-    //   .advantages-wrap {
-    //     padding: 2.3vw 0vw 1.6vw 4vw;
-    //   }
-
-    //   .card-title {
-    //     font-size: 2.55vw !important;
-    //   }
-
-    //   .card .content-wrap .card-price span:nth-of-type(1) {
-    //     font-size: 3.55vw;
-    //   }
-    // 
-    //   .card-price {
-    //     span {
-    //       &:nth-of-type(1) {
-    //         font-size: 3.5vw !important;
-    //       }
-
-    //       &:nth-of-type(2) {
-    //         font-size: 1.7vw !important;
-    //         line-height: 1vw !important;
-    //       }
-    //     }
-    //   }
-
-    //   .access-period {
-    //     font-size: 1.45vw;
-    //   }
-
-    //   .auto-smaller {
-    //     width: 20vw;
-    //   }
-    // }
+    &:hover {
+      transform: scale(1.03);
+    }
 
     .square-btn-wrap {
       padding: 0;
@@ -320,15 +295,6 @@
   }
 
   .champion-card {
-
-    // &:hover {
-    //   .content-wrap .card-price {
-    //     span:nth-of-type(2) {
-    //       font-size: 3.4vw !important;
-    //       line-height: unset !important;
-    //     }
-    //   }
-    // }
 
     .content-wrap .card-price {
 
