@@ -1,8 +1,8 @@
 * {
   margin: 0;
   font-family: MontserratRegular;
+  overflow: hidden;
 }
-
 
 .white-hat-desktop {
   display: none;
@@ -84,6 +84,7 @@ h1 {
   min-height: 161vw;
   background-size: cover;
   color: #3a2657;
+  overflow: hidden;
 
   .text-wrap {
     margin-top: -1%;
@@ -190,7 +191,6 @@ h1 {
   h1 {
     padding: 10% 1%;
     font-size: 5.8vw;
-
   }
 
   span a {
@@ -232,9 +232,42 @@ h1 {
   display: none;
 }
 
-
+.layer1,
+.layer2,
+.layer3 {
+  display: none;
+}
 
 @media only screen and (min-width: 750px) {
+
+  .layer1,
+  .layer2,
+  .layer3 {
+    position: absolute;
+    display: inline-block;
+  }
+
+  .layer1 {
+    width: 13vw;
+    left: 40vw;
+    margin-top: 24.5vw;
+  }
+
+  .layer2 {
+    width: 26.5vw;
+    left: 51.5vw;
+    margin-top: 20.2vw;
+  }
+
+  .layer3 {
+    width: 22vw;
+    left: 66vw;
+    margin-top: 45vw;
+  }
+
+  .defend-text-wrap {
+    width: 122vw;
+  }
 
   .ipad-wrap {
     height: 71vw;
@@ -345,6 +378,7 @@ h1 {
     min-height: 56vw;
     padding-top: 19vw;
     margin-top: -8vw;
+    overflow: hidden;
   }
 
   .layer-2-mobile-title {
@@ -395,7 +429,6 @@ h1 {
     background-repeat: no-repeat;
     background-position-y: 6%;
   }
-
 
   .password-prot-wrap {
     background-image: unset;
@@ -482,8 +515,8 @@ h1 {
   }
 
   .power-wizard-wrap {
-    background-image: url(/assets/wizarddesktop.png);
-    background-color: #99E4FF;
+    background-image: url(/assets/wizard-desktop.svg);
+    background-color: #99e4ff;
     background-size: 109vw;
     color: #3a2657;
     padding: 8vw 0 45vw 0;
@@ -499,8 +532,6 @@ h1 {
         font-family: MontserratBold;
       }
     }
-
-
   }
 
   /// anti link
@@ -517,7 +548,6 @@ h1 {
       margin: 0;
       font-size: 1.4vw;
       margin-top: 1.5%;
-
     }
 
     .flex-reverse {

@@ -11,7 +11,7 @@ button {
   justify-content: center;
   font-family: MontserratSemiBold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 
   &.dark-violet {
     background-color: #3A2657;
@@ -52,7 +52,12 @@ img {
 
     &:hover {
       cursor: pointer;
-      background-color: #3A2657;
+      color: #9948E6;
+      background-color: white;
+
+      img {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(84%) saturate(3802%) hue-rotate(256deg) brightness(96%) contrast(87%);
+      }
     }
   }
 

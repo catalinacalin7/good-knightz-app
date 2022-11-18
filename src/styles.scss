@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-$violet: #3A2657;
+$violet: #3a2657;
 
 html {
   scroll-behavior: smooth;
-  background: #251B33;
+  background: #251b33;
   width: 100%;
 }
 
@@ -29,11 +29,11 @@ body {
 }
 
 .orange-font {
-  color: #F7A302;
+  color: #f7a302;
 }
 
 .yellow-font {
-  color: #FFC404;
+  color: #ffc404;
 }
 
 .txt-center {
@@ -41,7 +41,7 @@ body {
 }
 
 .justify-end {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 @font-face {

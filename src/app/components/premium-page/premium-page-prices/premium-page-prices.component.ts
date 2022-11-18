@@ -12,7 +12,6 @@ export class PremiumPagePricesComponent implements OnInit {
   ngOnInit(): void {}
 
   navigateToDetails() {
-    window.location.href =
-      'https://discord.com/api/oauth2/authorize?client_id=957481307405975552&permissions=2953276446&scope=applications.commands%20bot';
+    window.location.href = 'https://discord.com/invite/GwDw95vPyT';
   }
 }

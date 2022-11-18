@@ -5,7 +5,7 @@
     <p>II <br /><span class="tier">Tier</span></p>
     <p>III <br /><span class="tier">Tier</span></p>
   </div>
-  <div *ngFor="let part of advantageParts" class="advantage-part">
+  <div *ngFor="let part of advantageParts" class="advantage-part" data-aos="fade-up">
     <p class="advantage-part-title">{{ part.title }}</p>
     <div *ngFor="let item of part.partItems" class="part-item">
       <p class="title">{{ item.title }}</p>
@@ -19,10 +19,10 @@
       </div>
     </div>
   </div>
-  <div class="arrows-wrap-mobile">
+  <div class="arrows-wrap-mobile" data-aos="fade-up">
     <img *ngFor="let item of [1, 2, 3, 4]" src="assets/arrow-gray-icon.svg" (click)="goToTable()" />
   </div>
-  <div class="arrows-wrap-desktop">
-    <p *ngFor="let item of [1, 2, 3, 4]">Get Started</p>
+  <div class="arrows-wrap-desktop" data-aos="fade-up">
+    <p *ngFor="let item of [1, 2, 3, 4]" (click)="goToInvite()">Get Started</p>
   </div>
 </div>

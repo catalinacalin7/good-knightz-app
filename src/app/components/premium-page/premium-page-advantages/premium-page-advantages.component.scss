@@ -1,3 +1,7 @@
+* {
+  overflow: hidden;
+}
+
 .advantages-body {
   background-color: white;
   color: black;
@@ -12,7 +16,7 @@
       text-align: center;
       font-family: MontserratBold;
       font-size: 4.2vw;
-      color: #3A2657;
+      color: #3a2657;
 
       .tier {
         font-size: 4.2vw;
@@ -34,9 +38,8 @@
     }
   }
 
-
   .advantage-part-title {
-    background-color: #3A2657;
+    background-color: #3a2657;
     color: white;
     padding: 7vw 4vw;
     border-radius: 11px;
@@ -104,7 +107,7 @@
       margin-left: 1.4vw;
 
       &:hover {
-        content: url(/assets/icon-arrow-violet.svg)
+        content: url(/assets/icon-arrow-violet.svg);
       }
     }
   }
@@ -115,7 +118,6 @@
 }
 
 @media only screen and (max-width: 750px) {
-
   .tier {
     display: none;
   }
@@ -287,10 +289,10 @@
 
   .arrows-wrap-desktop {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     p {
-      color: #BEC6DE;
+      color: #de9cea;
       font-size: 1.4vw;
       margin-left: 2.9vw;
       font-family: MontserratBold;
@@ -301,7 +303,7 @@
       }
 
       &:hover {
-        color: #3A2657;
+        color: #3a2657;
         text-decoration: underline;
       }
     }

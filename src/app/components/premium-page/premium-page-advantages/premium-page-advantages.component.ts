@@ -110,5 +110,9 @@ export class PremiumPageAdvantagesComponent implements OnInit {
     }
   }
 
+  goToInvite() {
+    window.location.href = 'https://discord.com/invite/GwDw95vPyT';
+  }
+
   ngOnInit(): void {}
 }

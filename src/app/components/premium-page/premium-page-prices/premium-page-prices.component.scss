@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: MontserratRegular;
+  overflow: hidden;
 }
 
 p {
@@ -78,7 +79,7 @@ h1 {
 
 @media only screen and (min-width: 750px) {
   price-item {
-    overflow: visible;
+    overflow: visible !important;
   }
 
   .join-title {
@@ -88,7 +89,7 @@ h1 {
 
   .join-description {
     font-size: 1.3vw;
-    padding: 1.2vw 33vw 3vw;
+    padding: 1.2vw 31vw 3vw;
     line-height: unset;
   }
 
@@ -102,7 +103,7 @@ h1 {
   .prices-items-wrap {
     display: flex;
     padding: 0 9%;
-    overflow: visible;
+    overflow: visible !important;
     justify-content: space-between;
   }
 

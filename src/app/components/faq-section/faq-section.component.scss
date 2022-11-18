@@ -22,7 +22,7 @@ h1 {
   }
 
   .question-item {
-    background-color: #3A2657;
+    background-color: #3a2657;
     font-family: MontserratSemiBold;
     margin: 0 0 6% 0;
     font-size: 3.8vw;
@@ -113,7 +113,6 @@ h1 {
 }
 
 @media only screen and (min-width: 750px) {
-
   .rock-gif,
   .owl-gif {
     display: block;
@@ -135,7 +134,6 @@ h1 {
   .faq-wrapper {
     padding: 10% 0 6% 0;
     background-image: unset;
-
 
     h1 {
       font-size: 3.1vw;
@@ -163,7 +161,7 @@ h1 {
         }
       }
 
-      >div {
+      > div {
         width: 100%;
         justify-content: space-between;
         align-items: center;

@@ -2,14 +2,16 @@
   <app-header></app-header>
   <div class="join-wrap">
     <h1 class="join-title">Join fellow Knightz at the Round Table!</h1>
-    <p class="join-description">Enhance your server security with most advanced security and moderation features.</p>
+    <p class="join-description">Enhance your server security with the most advanced security and
+      moderation features.
+    </p>
   </div>
   <app-secure-for-free></app-secure-for-free>
-  <div id="features-table" class="prices-items-wrap">
+  <div id="features-table" class="prices-items-wrap" data-aos="fade-up">
     <price-item [indexCard]=index *ngFor="let index of [0,1,2]"></price-item>
   </div>
   <!-- <img src="assets/most-popular-desktop.svg" class="most-popular-desktop"> -->
-  <div class="contact-detail-wrap">
+  <div class="contact-detail-wrap" data-aos="fade-up">
     <p>Professional server security audits and custom setup
       by Discord security experts<br>
       <span (click)="this.navigateToDetails()">Contact for Details</span></p>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-secure-for-free',
@@ -9,7 +10,9 @@ import { Router } from '@angular/router';
 export class SecureForFreeComponent implements OnInit {
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init({ startEvent: 'load' });
+  }
 
   getActiveLink() {
     var n = window.location.href.lastIndexOf('/');
