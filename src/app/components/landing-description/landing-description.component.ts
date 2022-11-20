@@ -16,16 +16,16 @@ export class LandingDescriptionComponent implements OnInit {
   }
 
   addAnimation(id: number) {
-    if (!this.isOpenedAnimations[id]) {
-      document
-        .getElementsByClassName('frame' + id)[0]
-        .classList.add('frame-animation');
-      this.isOpenedAnimations[id] = true;
-    } else {
-      document
-        .getElementsByClassName('frame' + id)[0]
-        .classList.remove('frame-animation');
-      this.isOpenedAnimations[id] = false;
-    }
+    // if (!this.isOpenedAnimations[id]) {
+    //   document
+    //     .getElementsByClassName('frame' + id)[0]
+    //     .classList.add('frame-animation');
+    //   this.isOpenedAnimations[id] = true;
+    // } else {
+    //   document
+    //     .getElementsByClassName('frame' + id)[0]
+    //     .classList.remove('frame-animation');
+    //   this.isOpenedAnimations[id] = false;
+    // }
   }
 }
