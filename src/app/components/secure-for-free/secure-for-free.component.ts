@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+// @ts-ignore: Unreachable code error
 import AOS from 'aos';
 
 @Component({

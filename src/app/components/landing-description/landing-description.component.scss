@@ -102,6 +102,7 @@ h1 {
     width: 111%;
     margin-top: -2%;
     margin-left: -3%;
+    display: block;
   }
 
   p {
@@ -279,7 +280,90 @@ h1 {
   display: none;
 }
 
+.frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+  width: 12vw;
+  position: absolute;
+}
+
+.frame1 {
+  width: 16vw;
+  margin-top: -54vw;
+  left: 47vw;
+}
+
+.frame2 {
+  margin-top: -64vw;
+  right: 14vw;
+}
+
+.frame3 {
+  width: 11vw;
+  left: 12vw;
+  margin-top: -42vw;
+}
+
+.frame4 {
+  left: 12vw;
+  margin-top: -62vw;
+}
+
+.frame5 {
+  right: 14vw;
+  margin-top: -40vw;
+}
+
+.frame-animation {
+  transform: scale(2.5) !important;
+}
+
 @media only screen and (min-width: 750px) {
+
+  .frame-animation {
+    transform: unset;
+  }
+
+  .frame1,
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5 {
+    width: 6vw;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  .frame1 {
+    width: 10vw;
+    margin-top: 15vw;
+    left: 29vw;
+  }
+
+  .frame2 {
+    margin-top: 12vw;
+    left: 44vw;
+  }
+
+  .frame3 {
+    left: 8.5vw;
+    margin-top: 24vw;
+  }
+
+  .frame4 {
+    left: 9vw;
+    margin-top: 13vw;
+  }
+
+  .frame5 {
+    left: 45vw;
+    margin-top: 25vw;
+  }
 
   .mobile {
     display: none;

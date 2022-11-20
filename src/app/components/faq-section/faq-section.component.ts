@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// @ts-ignore: Unreachable code error
 import AOS from 'aos';
 
 @Component({
