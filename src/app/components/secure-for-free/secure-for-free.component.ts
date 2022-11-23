@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// @ts-ignore: Unreachable code error
-import AOS from 'aos';
 
 @Component({
   selector: 'app-secure-for-free',
@@ -11,9 +9,7 @@ import AOS from 'aos';
 export class SecureForFreeComponent implements OnInit {
   constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    AOS.init({ startEvent: 'load' });
-  }
+  ngOnInit(): void {}
 
   getActiveLink() {
     var n = window.location.href.lastIndexOf('/');
@@ -30,7 +26,7 @@ export class SecureForFreeComponent implements OnInit {
 
   goToPriceTable() {
     if (this.getActiveLink() === 'features') {
-      this.router.navigateByUrl('/premium#features-table');
+      this.router.navigateByUrl('/premium');
     } else {
       let x = document.querySelector('#features-table');
       if (x) {

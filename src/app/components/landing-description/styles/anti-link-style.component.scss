@@ -1,0 +1,71 @@
+.anti-link-wrap {
+  color: white;
+  padding-bottom: 10%;
+  padding-top: 24%;
+  background-image: url(/assets/stars4.svg);
+  background-size: 90vw;
+  background-position-x: 6vw;
+  background-repeat: no-repeat;
+  background-position-y: 20vw;
+
+  h1 {
+    padding: 0 20vw;
+  }
+
+  img {
+    width: 81vw;
+    margin: 15vw auto;
+  }
+
+  p {
+    margin: -2% 8% 14% 9%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  /// anti link
+  .anti-link-wrap {
+    padding: 12% 12% 0 12%;
+
+    h1 {
+      font-size: 3.3vw;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2vw;
+      margin: 0;
+      font-size: 1.4vw;
+      margin-top: 1.5%;
+    }
+
+    .flex-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .anti-link-wrap {
+    background-image: unset;
+  }
+
+  .ipad-wrap {
+    height: 71vw;
+
+    img {
+      width: 66vw;
+      margin-top: 8vw;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transition: 0.3s;
+      position: absolute;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

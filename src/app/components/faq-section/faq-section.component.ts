@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-// @ts-ignore: Unreachable code error
-import AOS from 'aos';
 
 @Component({
   selector: 'app-faq-section',
   templateUrl: './faq-section.component.html',
-  styleUrls: ['./faq-section.component.scss']
+  styleUrls: [
+    './faq-section.component.scss',
+    './faq-section-desktop.component.scss'
+  ]
 })
 export class FaqSectionComponent implements OnInit {
   questionsArray = [
@@ -55,9 +56,7 @@ export class FaqSectionComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    AOS.init({ startEvent: 'load' });
-  }
+  ngOnInit(): void {}
 
   toggleVisibleAnswerClass(question: any) {
     question.shouldDisplayAnswer = !question.shouldDisplayAnswer;

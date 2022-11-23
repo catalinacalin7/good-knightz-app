@@ -1,0 +1,129 @@
+.layer2-sec-wrap {
+  background-image: url(/assets/layer2-background.svg);
+  padding-top: 36%;
+  min-height: 161vw;
+  background-size: cover;
+  color: #3a2657;
+  overflow: hidden;
+
+  .text-wrap {
+    margin-top: -1%;
+  }
+
+  .layer2-ipad-img-mobile {
+    width: 111%;
+    margin-top: -2%;
+    margin-left: -3%;
+    display: block;
+  }
+
+  .layer2-ipad-img-desktop {
+    display: none;
+  }
+
+  p {
+    margin: 0 5%;
+
+    &:first-child {
+      margin-bottom: 5%;
+    }
+
+    span {
+      font-family: MontserratSemiBold;
+    }
+  }
+}
+
+
+.frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .frame1,
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5 {
+    position: absolute;
+    display: block;
+    transition: 0.2s;
+    width: 6vw;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  .frame1 {
+    width: 10vw;
+    margin-top: 15vw;
+    left: 29vw;
+  }
+
+  .frame2 {
+    margin-top: 12vw;
+    left: 44vw;
+  }
+
+  .frame3 {
+    left: 8.5vw;
+    margin-top: 24vw;
+  }
+
+  .frame4 {
+    left: 9vw;
+    margin-top: 13vw;
+  }
+
+  .frame5 {
+    left: 45vw;
+    margin-top: 25vw;
+  }
+
+  .layer2-sec-wrap {
+    background-image: url(/assets/layer2desktop.svg);
+    background-size: cover;
+    min-height: 56vw;
+    padding-top: 19vw;
+    margin-top: -8vw;
+    overflow: hidden;
+
+    p {
+      font-size: 1.4vw;
+      margin-top: 3% !important;
+      margin: 0;
+      padding-right: 3%;
+    }
+
+    .text-wrap {
+      margin: 0px 7% 0 -7%;
+      padding-left: 2%;
+      text-align: left;
+
+      .lockicon {
+        width: 17%;
+        margin-top: 24%;
+        display: block;
+      }
+    }
+
+    .layer2-ipad-img-desktop {
+      width: 221%;
+      margin-top: -2%;
+      margin-left: 0;
+      display: block;
+    }
+
+    .layer2-ipad-img-mobile {
+      display: none;
+    }
+
+  }
+}

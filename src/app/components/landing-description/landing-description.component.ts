@@ -1,31 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-// @ts-ignore: Unreachable code error
-import AOS from 'aos';
+import { Router } from '@angular/router';
+import { CommonDataService } from 'src/app/common-data.service';
 
 @Component({
   selector: 'app-landing-description',
   templateUrl: './landing-description.component.html',
-  styleUrls: ['./landing-description.component.scss']
+  styleUrls: [
+    './styles/landing-description.component.scss',
+    './styles/anti-link-style.component.scss',
+    './styles/layer2-sec-style.component.scss',
+    './styles/password-prot-style.component.scss'
+  ]
 })
 export class LandingDescriptionComponent implements OnInit {
   isOpenedAnimations = [false, false, false, false, false];
-  constructor() {}
+  constructor(private router: Router, private commonData: CommonDataService) {}
 
-  ngOnInit(): void {
-    AOS.init({ startEvent: 'load' });
-  }
+  ngOnInit(): void {}
 
-  addAnimation(id: number) {
-    // if (!this.isOpenedAnimations[id]) {
-    //   document
-    //     .getElementsByClassName('frame' + id)[0]
-    //     .classList.add('frame-animation');
-    //   this.isOpenedAnimations[id] = true;
-    // } else {
-    //   document
-    //     .getElementsByClassName('frame' + id)[0]
-    //     .classList.remove('frame-animation');
-    //   this.isOpenedAnimations[id] = false;
-    // }
+  scrollToTable() {
+    this.commonData.setMustScroll(true);
+    this.router.navigateByUrl('premium');
   }
 }

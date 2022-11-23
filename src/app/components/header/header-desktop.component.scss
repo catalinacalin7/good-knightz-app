@@ -1,0 +1,59 @@
+.anchor-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .anchor-menu {
+    background-image: url(/assets/features-menu.svg);
+    width: 20vw;
+    position: absolute;
+    display: block;
+    top: 9vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 30.96vw;
+    padding: 1.7vw 3vw;
+
+    a {
+      font-size: 1.4vw;
+      line-height: 1.6vw;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      margin: 1vw;
+      font-family: "MontserratSemiBold";
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        color: #DE9CEA;
+      }
+    }
+  }
+}
+
+$first : 0;
+$second : 2;
+$leftindex : 0;
+
+@while $second < 20 {
+  @for $i from $first through $second {
+    @media only screen and (min-width: calc(1000px + #{$i} * 100px)) {
+      $left: calc(31.1vw - 0.2vw * #{$leftindex} + 0.1vw * #{$i});
+
+      .anchor-menu {
+        left: $left;
+        padding-bottom: $second;
+      }
+    }
+  }
+
+  $first: calc($first + 2);
+  $second: calc($second + 2);
+  $leftindex: calc($leftindex + 0.8);
+}

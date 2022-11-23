@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-premium-page-advantages',
   templateUrl: './premium-page-advantages.component.html',
-  styleUrls: ['./premium-page-advantages.component.scss']
+  styleUrls: [
+    './premium-page-advantages.component.scss',
+    './premium-page-desktop.component.scss',
+    './premium-page-mobile.component.scss'
+  ]
 })
 export class PremiumPageAdvantagesComponent implements OnInit {
   advantageParts = [

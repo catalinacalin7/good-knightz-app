@@ -4,7 +4,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: [
+    './header-desktop.component.scss',
+    './header-mobile.component.scss',
+    './burger-menu.component.scss'
+  ]
 })
 export class HeaderComponent implements OnInit {
   isOpenBurger: boolean = false;
@@ -50,6 +54,13 @@ export class HeaderComponent implements OnInit {
   changeDisplayAnchorMenu(event: Event) {
     event.preventDefault();
     this.isOpenAnchorMenu = !this.isOpenAnchorMenu;
+  }
+
+  scrollToFragment(fragment: string) {
+    let x = document.querySelector('#' + fragment);
+    if (x) {
+      x.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   changeRoute(event: Event, route: string) {

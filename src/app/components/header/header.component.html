@@ -8,7 +8,8 @@
       <p>Features</p>
       <img src="assets/Vector1.svg" class="arrow-icon" [ngClass]="{'arrow-icon--rotated': this.isOpenSubmenu}">
       <div class="burger-sub-menu" [ngClass]="{'burger-sub-menu--visible': this.isOpenSubmenu}">
-        <a routerLink="features" [fragment]="option.fragment" *ngFor="let option of featuresMenu">{{option.title}}</a>
+        <a routerLink="features" (click)="scrollToFragment(option.fragment)"
+          *ngFor="let option of featuresMenu">{{option.title}}</a>
       </div>
     </div>
     <div (click)="changeRoute($event, 'premium')" [ngClass]="{'active-mobile' : getActiveLink() === 'premium'}">
@@ -35,7 +36,7 @@
     </button>
   </div>
   <div class="anchor-menu" *ngIf="this.isOpenAnchorMenu">
-    <a *ngFor="let option of featuresMenu" routerLink="features" [fragment]="option.fragment"
+    <a *ngFor="let option of featuresMenu" (click)="scrollToFragment(option.fragment)"
       (click)="changeDisplayAnchorMenu($event)">{{option.title}}</a>
   </div>
   <img src="assets/Logo.svg" class="logo-img-hidden" />

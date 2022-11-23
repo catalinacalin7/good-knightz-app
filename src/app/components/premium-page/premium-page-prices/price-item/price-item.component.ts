@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'price-item',
   templateUrl: './price-item.component.html',
-  styleUrls: ['./price-item.component.scss']
+  styleUrls: ['./card-style.component.scss', './price-item.component.scss']
 })
 export class PriceItemComponent implements OnInit {
   @Input() indexCard = 0;

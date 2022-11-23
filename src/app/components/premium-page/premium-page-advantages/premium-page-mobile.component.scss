@@ -1,0 +1,66 @@
+@media only screen and (max-width: 750px) {
+  .tier {
+    display: none;
+  }
+
+  .advantage-part {
+    &:nth-of-type(2) {
+      .part-item {
+
+        // Password & 2FA Protection
+        &:nth-of-type(1) {
+          p {
+            width: 28vw;
+            margin-right: 9vw;
+          }
+        }
+
+        // Server Panic Mode
+        &:nth-of-type(2) {
+          p {
+            width: 23vw;
+            margin-right: 14vw;
+          }
+        }
+      }
+    }
+
+    // Embed Creator
+    &:nth-of-type(3) {
+      .part-item {
+        &:nth-of-type(4) {
+          p {
+            width: 25vw;
+            margin-right: 12vw;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      .part-item {
+
+        // Server-wide link allowlist
+        &:nth-of-type(1) {
+          p {
+            width: 28vw;
+            margin-right: 9vw;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .part-item {
+
+        // Webhook allowlist limit
+        &:nth-of-type(2) {
+          p {
+            width: 24vw;
+            margin-right: 13vw;
+          }
+        }
+      }
+    }
+  }
+}

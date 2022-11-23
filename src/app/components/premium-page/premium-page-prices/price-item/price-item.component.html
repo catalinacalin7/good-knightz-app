@@ -1,5 +1,6 @@
 <div class="card" [ngClass]="{'round-table-card' : this.indexCard === 1, 'champion-card' : this.indexCard === 2}">
-  <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop">
+  <img src="assets/most-popular-desktop.svg" *ngIf="this.indexCard === 1" class="most-popular-desktop"
+    id="most-popular-icon">
   <h1 class="card-title">{{this.cardItems[this.indexCard].title}}</h1>
   <img src="assets/most-popular-mobile.svg" *ngIf="this.indexCard === 1" class="most-popular-icon">
   <div class="content-wrap">
@@ -28,7 +29,7 @@
           <p>{{advantage}}</p>
         </div>
       </div>
-      <div class="square-btn-wrap" data-aos="fade-up">
+      <div class="square-btn-wrap"  >
         <square-button *ngIf="this.indexCard !== 1" styleParams="auto-smaller" text="Get Started"
           color="transparent-violet" bordercolor="white" url="https://discord.com/invite/GwDw95vPyT">
         </square-button>

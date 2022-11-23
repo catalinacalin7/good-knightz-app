@@ -1,107 +1,3 @@
-* {
-  overflow: hidden;
-}
-
-.card {
-  background-color: #3A2657;
-  color: white;
-  border-radius: 21px;
-  margin-bottom: 17%;
-
-  .card-title {
-    padding-left: 11%;
-    width: 67%;
-    margin-top: 7vw;
-    font-size: 10vw;
-    transition: 0.04s;
-  }
-
-  .most-popular-icon {
-    width: 38%;
-    position: absolute;
-    margin-top: -43vw;
-    margin-left: 55vw;
-    transition: 0.04s;
-  }
-
-  .big-rock-img {
-    position: absolute;
-    width: 37%;
-    margin-top: -25vw;
-    margin-left: 44vw;
-  }
-
-  p {
-    margin: 0;
-    font-size: 3.7vw;
-    font-family: MontserratSemiBold;
-    transition: 0.04s;
-  }
-
-  .advantages-wrap {
-    margin-top: 8%;
-
-    .advantages-item {
-      margin-bottom: 5.4%;
-      transition: 0.04s;
-      align-items: center;
-    }
-  }
-
-  .square-btn-wrap {
-    padding: 2vw 6vw 9vw 0;
-  }
-
-  h1 {
-    font-family: MontserratBold;
-    margin-bottom: 0;
-    transition: 0.04s;
-  }
-
-  span {
-    font-family: MontserratBold;
-    transition: 0.04s;
-  }
-
-  .ok-icon {
-    width: 5.5vw;
-    margin-right: 4vw;
-  }
-
-  .access-period {
-    margin-top: 2%;
-    transition: 0.04s;
-    font-size: 3.7vw;
-    color: #FFC404;
-  }
-
-  .content-wrap {
-    padding: 0 6% 0 11%;
-
-    .card-price {
-      margin-top: 2%;
-      display: flex;
-      align-items: flex-end;
-      padding-right: 3%;
-
-      span {
-
-        &:nth-of-type(1) {
-          font-size: 14vw;
-          padding-right: 3%;
-        }
-
-        &:nth-of-type(2) {
-          color: #CAA1FF;
-          font-size: 5.3vw;
-          line-height: 5vw;
-          height: 14vw
-        }
-      }
-    }
-  }
-}
-
 .round-table-card {
   background-color: #7D59E0;
 
@@ -156,7 +52,6 @@
 }
 
 @media only screen and (min-width: 750px) {
-
   .most-popular-desktop {
     display: block;
     position: absolute;
@@ -200,7 +95,6 @@
       }
 
       .card-price {
-
         span:nth-of-type(2) {
           color: white;
           font-size: 3.2vw !important;
@@ -209,8 +103,6 @@
         }
       }
     }
-
-
   }
 
   .big-rock-img {
@@ -299,9 +191,7 @@
   }
 
   .champion-card {
-
     .content-wrap .card-price {
-
       span:nth-of-type(1) {
         font-size: 3.2vw;
       }
@@ -332,7 +222,6 @@
       text-indent: -9999px;
       line-height: 0;
 
-
       &:after {
         content: "Link allowlist limit increase and more...";
         text-indent: 0;
@@ -340,8 +229,6 @@
         display: flex;
       }
     }
-
-
   }
 
   .unlimited-advantage {
