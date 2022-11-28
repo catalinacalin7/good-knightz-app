@@ -264,6 +264,7 @@ h1 {
   .defend-wrap {
     padding: 3% 0 3% 9%;
     display: flex;
+    justify-content: right;
 
     .rounded-button-div>*:nth-child(2) {
       display: block;
@@ -277,6 +278,10 @@ h1 {
     font-family: MontserratBold;
     text-align: left;
     overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    margin-left: 9%;
   }
 
   .rounded-button-div {
@@ -289,7 +294,7 @@ h1 {
 
   .white-hat-desktop {
     display: inline-block;
-    width: 140vw;
+    width: 50vw;
     margin-top: 1%;
     margin-right: -1%;
   }
@@ -305,13 +310,18 @@ h1 {
     overflow: hidden;
     font-family: MontserratRegular;
     padding: 0;
+    position: absolute;
     padding-top: 25px;
     line-height: 1.6vw;
-    margin-bottom: 7%;
+    left: 9%;
+    margin-top: 18.5vw;
   }
 
   .rounded-button-div {
     display: flex;
+    position: absolute;
+    left: 9%;
+    margin-top: 28%;
   }
 
   .documentation-btn {
@@ -435,5 +445,30 @@ h1 {
     background-position-y: 7.2vw;
     background-position-x: 5vw;
     overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .descr-defend {
+    margin-top: 19vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .descr-defend {
+    margin-top: 19.5vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .descr-defend {
+    margin-top: 20vw;
+  }
+}
+
+
+@media only screen and (min-width: 1700px) {
+  .descr-defend {
+    margin-top: 20.5vw;
   }
 }
