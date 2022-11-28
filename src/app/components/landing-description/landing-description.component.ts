@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonDataService } from 'src/app/common-data.service';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-landing-description',
@@ -16,7 +17,15 @@ export class LandingDescriptionComponent implements OnInit {
   isOpenedAnimations = [false, false, false, false, false];
   constructor(private router: Router, private commonData: CommonDataService) {}
 
-  ngOnInit(): void {}
+  scrollRef = 0;
+  ngOnInit(): void {
+    window.addEventListener('scroll', () => {
+      this.scrollRef <= 10 ? this.scrollRef++ : AOS.refresh();
+    });
+    AOS.init({
+      once: false
+    });
+  }
 
   scrollToTable() {
     this.commonData.setMustScroll(true);
