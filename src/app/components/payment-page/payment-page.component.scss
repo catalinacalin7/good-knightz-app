@@ -13,6 +13,20 @@ h4 {
   font-family: MontserratBold;
 }
 
+.pay-btn {
+  font-size: 3.5vw;
+  font-family: MontserratSemiBold;
+  width: 30vw;
+  border-radius: 22px;
+  border: none;
+  margin-left: 1vw;
+
+  &:active {
+    background-color: #9948E6;
+    color: white;
+  }
+}
+
 .wrapper {
   background-image: url(/assets/stars4.svg);
   background-size: cover;
@@ -98,12 +112,18 @@ hr {
 
 .server-avatar {
   border-radius: 50%;
-  width: 20vw;
-  margin-right: 2vw;
+  width: 25vw;
+  margin-right: 3vw;
 }
 
 .title-div {
   text-align: left;
+}
+
+.pay-btn-wrap {
+  // display: grid;
+  // grid-gap: 1vw;
+  // display: flex;
 }
 
 @media only screen and (min-width: 750px) {
@@ -193,5 +213,20 @@ hr {
 
   .title-div {
     text-align: left;
+  }
+
+  .pay-btn {
+    font-size: 1.5vw;
+    font-family: MontserratSemiBold;
+    width: 20vw;
+    border-radius: 22px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9948E6;
+      color: white;
+    }
   }
 }
