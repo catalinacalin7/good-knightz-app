@@ -1,0 +1,197 @@
+* {
+  font-family: MontserratNormal;
+}
+
+p {
+  font-size: 5vw;
+  font-family: MontserratNormal;
+  margin: 0;
+}
+
+h4 {
+  font-size: 5vw;
+  font-family: MontserratBold;
+}
+
+.wrapper {
+  background-image: url(/assets/stars4.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 9vw 6vw;
+}
+
+.payment-desc {
+  display: block;
+  text-align: center;
+
+  .owl-gif {
+    width: 21vw;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  h3 {
+    font-size: 7vw;
+    margin: 0;
+    margin-top: 3vw;
+  }
+
+  p {
+    font-size: 5vw;
+    margin: 0;
+    margin-top: 3vw;
+  }
+}
+
+hr {
+  opacity: 0.3;
+  border-radius: 2px;
+}
+
+.learn-more {
+  color: #EFA500;
+  background-color: transparent;
+  border: none;
+  font-size: 5vw;
+  margin-top: 3vw;
+  font-family: MontserratBold;
+
+  &:active {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.servers-div {
+  text-align: center;
+
+  h4 {
+    font-size: 6vw;
+    margin: 0;
+    margin-top: 4vw;
+  }
+
+  .description {
+    font-size: 5vw;
+    margin: 0;
+    margin-top: 3vw;
+  }
+
+  .server-item {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8vw;
+    align-items: center;
+
+    .server-title {
+      font-family: MontserratBold;
+    }
+
+    .is-active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.server-avatar {
+  border-radius: 50%;
+  width: 20vw;
+  margin-right: 2vw;
+}
+
+.title-div {
+  text-align: left;
+}
+
+@media only screen and (min-width: 750px) {
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .wrapper {
+    background-image: url(/assets/starts-premium-desktop.svg);
+    padding: 3vw 9vw;
+  }
+
+  .payment-desc {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .owl-gif {
+      width: 10vw;
+      margin-right: 3vw;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    h3 {
+      font-size: 3vw;
+      margin: 0;
+    }
+
+    p {
+      font-size: 2vw;
+      margin: 0;
+      margin-top: 1vw;
+    }
+  }
+
+  .learn-more {
+    font-size: 2vw;
+    margin-top: unset;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .servers-div {
+
+    h4 {
+      font-size: 2.5vw;
+    }
+
+    .description {
+      font-size: 2vw;
+      margin-top: 1vw;
+    }
+
+    .server-item {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3vw;
+      align-items: center;
+
+      .server-title {
+        font-family: MontserratBold;
+      }
+
+      .is-active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+
+  .server-avatar {
+    border-radius: 50%;
+    width: 10vw;
+    margin-right: 2vw;
+  }
+
+  .title-div {
+    text-align: left;
+  }
+}

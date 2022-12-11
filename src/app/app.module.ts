@@ -15,6 +15,7 @@ import { PremiumPageComponent } from './components/premium-page/premium-page.com
 import { PremiumPagePricesComponent } from './components/premium-page/premium-page-prices/premium-page-prices.component';
 import { PriceItemComponent } from './components/premium-page/premium-page-prices/price-item/price-item.component';
 import { PremiumPageAdvantagesComponent } from './components/premium-page/premium-page-advantages/premium-page-advantages.component';
+import { PaymentPageComponent } from './components/payment-page/payment-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PremiumPageAdvantagesComponent } from './components/premium-page/premiu
     PremiumPageComponent,
     PremiumPagePricesComponent,
     PriceItemComponent,
-    PremiumPageAdvantagesComponent
+    PremiumPageAdvantagesComponent,
+    PaymentPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

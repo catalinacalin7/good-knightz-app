@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FeaturesPageComponent } from './components/features-page/features-page.component';
 import { PremiumPageComponent } from './components/premium-page/premium-page.component';
+import { PaymentPageComponent } from './components/payment-page/payment-page.component';
 
 const routes: Routes = [
   { path: 'features', component: FeaturesPageComponent },
   { path: 'premium', component: PremiumPageComponent },
+  { path: 'payment', component: PaymentPageComponent },
   { path: '**', redirectTo: 'features' }
 ];
 

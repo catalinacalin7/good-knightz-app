@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="payment-desc space-between">
+    <div class="flex align-center">
+      <img src="assets/Owl.gif" class="owl-gif">
+      <div>
+        <h3>2.5 PREMIUM</h3>
+        <p>Premium intelligence tools for web3 growth</p>
+      </div>
+    </div>
+    <button class="learn-more">Learn more</button>
+  </div>
+  <hr>
+  <div class="servers-div">
+    <h4>Select a server</h4>
+    <p class="description">These are the servers for which you have "Manage Server" permission or higher</p>
+    <div class="server-item" *ngFor="let server of servers">
+      <div class="flex align-center">
+        <img src="assets/1.jpg" alt="peppa" class="server-avatar">
+        <div class="title-div">
+          <p class="server-title">{{server}}</p>
+          <p class="is-active">Premium Inactive</p>
+        </div>
+      </div>
+      <square-button styleParams="auto-smaller" text="Get Premium" color="bright-violet-hover">
+      </square-button>
+    </div>
+  </div>
+</div>
