@@ -14,7 +14,7 @@
     <h4>Select a server</h4>
     <p class="description">These are the servers for which you have "Manage Server" permission or higher</p>
     <div class="server-item" *ngFor="let server of servers">
-      <div class="flex align-center">
+      <div class="flex align-center justify-center-mobile">
         <img src="assets/1.jpg" alt="peppa" class="server-avatar">
         <div class="title-div">
           <p class="server-title">{{server}}</p>
@@ -22,8 +22,9 @@
         </div>
       </div>
       <div class="pay-btn-wrap">
-        <button class="pay-btn">Pay with<br>Credit Card</button>
-        <button class="pay-btn">Pay with <br>ETH / USDC</button>
+        <button class="pay-btn" style="margin-bottom: 1vw">Pay with Credit Card<img
+            src="assets/white-arrow.svg"></button>
+        <button class="pay-btn">Pay with ETH / USDC<img src="assets/white-arrow.svg"></button>
       </div>
 
     </div>

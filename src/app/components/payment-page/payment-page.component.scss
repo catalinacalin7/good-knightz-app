@@ -1,31 +1,48 @@
 * {
-  font-family: MontserratNormal;
+  font-family: MontserratRegular;
 }
 
 p {
-  font-size: 5vw;
-  font-family: MontserratNormal;
+  font-size: 3.7vw;
+  font-family: MontserratRegular;
   margin: 0;
 }
 
 h4 {
-  font-size: 5vw;
+  font-size: 7.8vw;
   font-family: MontserratBold;
 }
 
 .pay-btn {
-  font-size: 3.5vw;
-  font-family: MontserratSemiBold;
-  width: 30vw;
-  border-radius: 22px;
-  background-color: white;
-  color: #9948E6;
-  border: none;
-  margin-left: 1vw;
+  font-size: 4.7vw;
+  padding: 5%;
+  font-family: MontserratBold;
+  color: white;
+  border-radius: 10px;
+  background-color: #3A2657;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: auto;
+  padding: 1vw;
+  margin-top: 2vw;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+
+  img {
+    width: 3%;
+    padding-left: 5%;
+  }
 
   &:active {
-    background-color: #9948E6;
-    color: white;
+    background-color: white;
+    color: #3A2657;
+
+    img {
+      filter: invert(28%) sepia(39%) saturate(100) hue-rotate(240deg) brightness(28%) contrast(89%)
+    }
   }
 }
 
@@ -50,13 +67,14 @@ h4 {
   }
 
   h3 {
-    font-size: 7vw;
+    font-family: MontserratBold;
+    font-size: 7.8vw;
     margin: 0;
     margin-top: 3vw;
   }
 
   p {
-    font-size: 5vw;
+    font-size: 3.7vw;
     margin: 0;
     margin-top: 3vw;
   }
@@ -71,7 +89,7 @@ hr {
   color: #EFA500;
   background-color: transparent;
   border: none;
-  font-size: 5vw;
+  font-size: 3.7vw;
   margin-top: 3vw;
   font-family: MontserratBold;
 
@@ -85,22 +103,19 @@ hr {
   text-align: center;
 
   h4 {
-    font-size: 6vw;
+    font-size: 7.8vw;
     margin: 0;
     margin-top: 4vw;
   }
 
   .description {
-    font-size: 5vw;
+    font-size: 3.7vw;
     margin: 0;
     margin-top: 3vw;
   }
 
   .server-item {
-    display: flex;
-    justify-content: space-around;
     margin-top: 8vw;
-    align-items: center;
 
     .server-title {
       font-family: MontserratBold;
@@ -123,19 +138,25 @@ hr {
 }
 
 .pay-btn-wrap {
-  // display: grid;
-  // grid-gap: 1vw;
-  // display: flex;
+  margin-top: 2vw;
+}
+
+.justify-center-mobile {
+  justify-content: center;
 }
 
 @media only screen and (min-width: 750px) {
 
+  .justify-center-mobile {
+    justify-content: unset;
+  }
+
   h4 {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.4vw;
   }
 
   .wrapper {
@@ -158,19 +179,20 @@ hr {
     }
 
     h3 {
-      font-size: 3vw;
+      font-size: 3.3vw;
       margin: 0;
+      font-family: MontserratBold;
     }
 
     p {
-      font-size: 2vw;
+      font-size: 1.4vw;
       margin: 0;
       margin-top: 1vw;
     }
   }
 
   .learn-more {
-    font-size: 2vw;
+    font-size: 1.4vw;
     margin-top: unset;
 
     &:hover {
@@ -182,11 +204,11 @@ hr {
   .servers-div {
 
     h4 {
-      font-size: 2.5vw;
+      font-size: 3.3vw;
     }
 
     .description {
-      font-size: 2vw;
+      font-size: 1.4vw;
       margin-top: 1vw;
     }
 
@@ -195,14 +217,6 @@ hr {
       justify-content: space-around;
       margin-top: 3vw;
       align-items: center;
-
-      .server-title {
-        font-family: MontserratBold;
-      }
-
-      .is-active {
-        opacity: 0.5;
-      }
     }
   }
 
@@ -218,17 +232,22 @@ hr {
   }
 
   .pay-btn {
-    font-size: 1.5vw;
-    font-family: MontserratSemiBold;
-    width: 20vw;
-    border-radius: 22px;
-    border: none;
-    transition: 0.3s;
-    cursor: pointer;
+    font-size: 1.6vw;
+    width: 25vw;
+    margin-left: 1vw;
+
+    img {
+      width: 3%;
+      padding-left: 5%;
+    }
 
     &:hover {
-      background-color: #9948E6;
-      color: white;
+      background-color: white;
+      color: #3A2657;
+
+      img {
+        filter: invert(28%) sepia(39%) saturate(100) hue-rotate(240deg) brightness(28%) contrast(89%)
+      }
     }
   }
 }
