@@ -25,6 +25,22 @@ export class LandingDescriptionComponent implements OnInit {
     AOS.init({
       once: false
     });
+
+    let iphoneVideo = document.getElementById(
+      'iphone-video'
+    ) as HTMLVideoElement | null;
+    let computerVideo = document.getElementById(
+      'computer-video'
+    ) as HTMLVideoElement | null;
+    if (iphoneVideo) {
+      console.log('iphone video');
+      iphoneVideo.play();
+    }
+
+    if (computerVideo) {
+      console.log('computer video');
+      computerVideo.play();
+    }
   }
 
   scrollToTable() {
