@@ -1,4 +1,1 @@
-<svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 6L64.2805 64.2805" stroke="#DE9CEA" stroke-width="12" stroke-linecap="round"/>
-<path d="M64.2812 6L6.00077 64.2805" stroke="#DE9CEA" stroke-width="12" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" fill="none" stroke="#de9cea" stroke-width="12" stroke-linecap="round" xmlns:v="https://vecta.io/nano"><path d="M6 6l58.281 58.281"/><path d="M64.281 6L6.001 64.281"/></svg>

@@ -1,4 +1,1 @@
-<svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="30" cy="30.0469" rx="30" ry="30.0469" fill="#BEC6DE"/>
-<path d="M19.4581 19.4899L41.35 41.416M19.4581 41.416L41.35 19.4899" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" fill="none" xmlns:v="https://vecta.io/nano"><ellipse cx="30" cy="30.047" rx="30" ry="30.047" fill="#bec6de"/><path d="M19.458 19.49L41.35 41.416m-21.892 0L41.35 19.49" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
