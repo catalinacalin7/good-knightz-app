@@ -33,12 +33,12 @@ export class LandingDescriptionComponent implements OnInit {
       'computer-video'
     ) as HTMLVideoElement | null;
     if (iphoneVideo) {
-      console.log('iphone video');
+      iphoneVideo.muted = true;
       iphoneVideo.play();
     }
 
     if (computerVideo) {
-      console.log('computer video');
+      computerVideo.muted = true;
       computerVideo.play();
     }
   }
