@@ -368,7 +368,7 @@ h1 {
   }
 
   .stars2-background {
-    background-image: url(/assets/stars6.svg);
+    background-image: url(/assets/panic-stars.png);
     background-size: 87vw 99vw;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -381,6 +381,7 @@ h1 {
     flex-direction: row-reverse;
     background-image: unset;
     padding-bottom: 6%;
+    padding-top: 10vw;
 
     h1 {
       font-size: 3.3vw;
@@ -406,12 +407,14 @@ h1 {
     .computer-video {
       height: auto;
       position: absolute;
-      width: 34vw;
+      width: 34.3vw;
       border-radius: 6px;
-      left: 9.7vw;
-      margin-top: 3.1vw;
+      left: 9.2vw;
+      margin-top: 3vw;
       border-top: 1vw solid black;
-      border-bottom: 1vw solid black;
+      border-bottom: 1.3vw solid black;
+      border-right: 0.4vw solid black;
+      border-left: 0.4vw solid black;
     }
 
   }
