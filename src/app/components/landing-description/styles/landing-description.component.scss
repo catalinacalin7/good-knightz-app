@@ -95,17 +95,23 @@ h1 {
   background-position-y: 31vw;
 
   img {
-    width: 96%;
+    width: 112%;
     margin-top: 1%;
+    z-index: 1;
+    position: relative;
+    margin-left: -6%;
   }
 
   .computer-video {
     height: auto;
     position: absolute;
-    width: 69vw;
+    width: 67vw;
     border-radius: 5px;
-    left: 15.5vw;
-    margin-top: 12.5vw;
+    left: 16.5vw;
+    z-index: 0;
+    margin-top: 11vw;
+    border-top: 1.4vw solid black;
+    border-bottom: 1.4vw solid black;
   }
 
   p {
@@ -378,7 +384,7 @@ h1 {
 
     h1 {
       font-size: 3.3vw;
-      padding-top: 3vw;
+      padding-top: 2vw;
       padding-left: 10%;
     }
 
@@ -394,15 +400,18 @@ h1 {
       width: 107%;
       margin-top: -2%;
       margin-left: 3%;
+      z-index: 1;
     }
 
     .computer-video {
       height: auto;
       position: absolute;
-      width: 40vw;
+      width: 34vw;
       border-radius: 6px;
-      left: 11.4vw;
-      margin-top: 4.6vw;
+      left: 14.4vw;
+      margin-top: 3.1vw;
+      border-top: 0.7vw solid black;
+      border-bottom: 0.5vw solid black;
     }
 
   }
@@ -415,7 +424,7 @@ h1 {
   }
 
   .panic-txt-wrap {
-    padding-top: 6%;
+    padding-top: 3%;
     width: 65vw;
     padding-left: 0vw;
     margin-right: 6vw;
